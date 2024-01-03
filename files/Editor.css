@@ -1526,22 +1526,22 @@ input[name="type_editor_re"]:checked ~ .radio_checked {
 
     @font-face {
         font-family: krishna;
-        src: url(fonts/hindi/K11.ttf);
+        src: url(/fonts/hindi/K11.ttf);
     }
     @font-face {
         font-family: maya;
-        src: url(fonts/hindi/MAYA.ttf);
+        src: url(/fonts/hindi/MAYA.ttf);
     }
 
     /* english */
     
     @font-face {
-        src: url(fonts/english/Gsans.ttf);
+        src: url(/fonts/english/Gsans.ttf);
         font-family: Google;
     }
 
     @font-face {
-        src: url(fonts/english/Aaargh.ttf);
+        src: url(/fonts/english/Aaargh.ttf);
         font-family: aargh;
     }
 
@@ -1549,27 +1549,27 @@ input[name="type_editor_re"]:checked ~ .radio_checked {
 
     @font-face {
         font-family: kremlin;
-        src: url(fonts/russian/kremlin.ttf);
+        src: url(/fonts/russian/kremlin.ttf);
     }
 
     @font-face {
         font-family: kalinka;
-        src: url(fonts/russian/kalinka.ttf);
+        src: url(/fonts/russian/kalinka.ttf);
     }
 
     @font-face {
         font-family: gagasm;
-        src: url(fonts/russian/GAGASM__.ttf);
+        src: url(/fonts/russian/GAGASM__.ttf);
     }
 
     @font-face {
         font-family: motherland;
-        src: url(fonts/russian/motherland.ttf);
+        src: url(/fonts/russian/motherland.ttf);
     }
 
     @font-face {
         font-family: rusk;
-        src: url(fonts/russian/RUSKOFLIGHT.ttf);
+        src: url(/fonts/russian/RUSKOFLIGHT.ttf);
     }
 
 @keyframes Abhs {
