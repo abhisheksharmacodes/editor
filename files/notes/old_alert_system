@@ -1,0 +1,68 @@
+<div class="max_h msg_bx alt">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body">max height limit reached</bdo>
+</div>
+<div class="min_h msg_bx alt">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body">min height limit reached</bdo>
+</div>
+<div class="max_w msg_bx alt">
+<header class="msg_header">alert</header>
+<bdo class="msg_body">max width limit reached</bdo>
+</div>
+<div class="min_w msg_bx alt">
+<header class="msg_header">alert</header>
+<bdo class="msg_body">min width limit reached</bdo>
+</div>
+<div class="max_b_r msg_bx alt" style="width:340px;left:31%;">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body">max border width limit reached</bdo>
+</div>
+<div class="min_b_r msg_bx alt" style="width:340px;left:31%;">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body">min border width limit reached</bdo>
+</div>
+<div class="max_scx msg_bx alt" style="width:340px;left:31%;">
+<header class="msg_header">alert</header>
+<bdo class="msg_body">max X - scaling limit reached</bdo>
+</div>
+<div class="min_scx msg_bx alt" style="width:340px;left:31%;">
+<header class="msg_header">alert</header>
+<bdo class="msg_body">min X - scaling limit reached</bdo>
+</div>
+<div class="max_scy msg_bx alt" style="width:340px;left:31%;">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body">max Y - scaling limit reached</bdo>
+</div>
+<div class="min_scy msg_bx alt" style="width:340px;left:31%;">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body">min Y - scaling limit reached</bdo>
+</div>
+<div class="max_scz msg_bx alt" style="width:340px;left:31%;">
+<header class="msg_header">alert</header>
+<bdo class="msg_body">max Z - scaling limit reached</bdo>
+</div>
+<div class="min_scz msg_bx alt" style="width:340px;left:31%;">
+<header class="msg_header">alert</header>
+<bdo class="msg_body">min Z - scaling limit reached</bdo>
+</div>
+<div class="max_del msg_bx alt" style="width:340px;left:31%;">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body">max delay time limit reached</bdo>
+</div>
+<div class="min_del msg_bx alt" style="width:340px;left:31%;">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body">min delay time limit reached</bdo>
+</div>
+<div class="max_pos_sc msg_bx alt" style="width:370px;left:28%;">
+<header class="msg_header">alert</header>
+<bdo class="msg_body">max position scaling limit reached</bdo>
+</div>
+<div class="min_pos_sc msg_bx alt" style="width:370px;left:28%;">
+<header class="msg_header">alert</header>
+<bdo class="msg_body">min position scaling limit reached</bdo>
+</div>
+<div class="st_msg msg_bx alt" style="display: none;transform: rotateY(0deg);width:370px;left:28%;">
+	<header class="msg_header">alert</header>
+	<bdo class="msg_body"><P class="st_name" style="display:inline-block;">hover</p> state is now activated</bdo>
+</div>

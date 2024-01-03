@@ -1,0 +1,82 @@
+<div class="optimize_editor more_divs" style="padding:0px;display:none;">
+                    <div class="optimize_opts op1024_768" style="margin-top:20px;"> 1024 * 768 </div>
+                    <div class="optimize_opts op1280_800"> 1280 * 800 </div>
+                    <div class="optimize_opts op1280_1024"> 1280 * 1024 </div>
+                    <div class="optimize_opts op1366_768"> 1366 * 768 </div>
+                    <div class="optimize_opts op1440_900"> 1440 * 900 </div>
+                    <div class="optimize_opts op1536_864"> 1536 * 864 </div>
+                    <div class="optimize_opts op1920_1080"> 1920 * 1080 </div>
+                    <font class="learn_optimize">learn more</font>
+				</div>
+
+
+
+.optimize_editor {
+    height:480px;
+    width:180px;
+    border-radius:5px 5px 10px 10px;
+    box-shadow:0px 0px 10px 0px grey;
+    position:relative;
+    
+    background:white;
+    top:-710px;
+    left:285px;
+    z-index:11;
+}
+
+.optimize_opts {
+    height:50px;
+    width:100%;
+    background:rgba(0,0,0,.0);
+    
+    font-family:Consolas;
+    font-size:20px;
+    color:rgba(0,0,0,.45);
+    font-weight:bolder;
+    margin-top:12px;
+    box-sizing:border-box;
+    padding-top:15px;
+    padding-left:30px;
+}
+.optimize_opts:hover {
+    background:rgba(0,0,0,.1);
+}
+
+.learn_optimize {
+    color:rgba(0,128,255,.8);
+    left:54px;
+    position:relative;
+    top:10px;
+    font-size:18px;
+}
+    .learn_optimize:hover {
+        color:rgba(0,128,255,1);
+    }
+
+
+
+
+/* ---------- screen optimizer ------------ */
+                    
+        body.css({height:'1000px',width:'1000px'})
+    $(".op1024_768").click(function () {
+        body.css({ transform: 'scaleX(1.024) scaleY(0.768)', transformOrigin: 'top left' })
+    })
+    $(".op1280_800").click(function () {
+        body.css({transform:'scaleX(1.280) scaleY(0.800)',transformOrigin:'top left'})
+    })
+    $(".op1280_1024").click(function () {
+        body.css({ transform: 'scaleX(1.280) scaleY(1.024)', transformOrigin: 'top left' })
+    })
+    $(".op1366_768").click(function () {
+        body.css({ transform: 'scaleX(1.366) scaleY(0.768)', transformOrigin: 'top left' })
+    })
+    $(".op1440_900").click(function () {
+        body.css({ transform: 'scaleX(1.440) scaleY(0.900)', transformOrigin: 'top left' })
+    })
+    $(".op1536_864").click(function () {
+        body.css({ transform: 'scaleX(1.536) scaleY(0.864)', transformOrigin: 'top left' })
+    })
+    $(".op1920_1080").click(function () {
+        body.css({ transform: 'scaleX(1.920) scaleY(1.080)', transformOrigin: 'top left' })
+    })

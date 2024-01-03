@@ -1,0 +1,12 @@
+<div class="cust_work_place pos_workplace" style="display:none;overflow:hidden;">
+					scale <font style="margin-left:18px">:</font> <input class="pos_sc" type="number" value="5"><BR>
+					top <font style="margin-left:35px">:</font> <input class="pos_top" type="number" value="-10"><BR>
+					<font style="margin-left:0px;">left</font> <font style="margin-left:36px">:</font> <input class="pos_left" type="number" value="240">
+						<!-- joystick -->
+							<div class="joystick">
+								<div class="nav nav_top" style="top:0%;left:0%;margin-bottom: 20px;border-bottom:transparent;border-right:transparent;"></div>
+								<div class="nav nav_right" style="left:50%;border-bottom:transparent;border-left:transparent;margin-left: 20px;"></div>
+								<div class="nav nav_left" style="top:50%;border-top:transparent;border-right:transparent;margin-top: 20px;"></div>
+								<div class="nav nav_bottom" style="top:50%;left:50%;border-left:transparent;border-top:transparent;margin-top: 20px;margin-left: 20px;"></div>
+							</div>
+				</div>

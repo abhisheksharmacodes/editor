@@ -1,0 +1,1330 @@
+<!-- Editor : an Authorised web application
+     Developed in india
+     by ISC
+     (C) 2018 ISC | All rights reserved -->
+<!-- element markups and inline styles begins from here ...  -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>editor</title>
+    <script src="files\Js\jquery-3.3.1.js"></script>
+    <script src="files\Js\jquery-ui.js"></script>
+    <script src="files\Js\jquery.nicescroll.js"></script>
+    <script src="files\Js\Editor.js"></script>
+    <script src="files\Js\animation.js"></script>
+    <script src="files\Js\speak.js"></script>
+	<script src="files\Js\states.js"></script>
+	<script src="files\Js\Yatharth.js"></script>
+	<script src="files\Js\ISC_v.1.0_.js"></script>
+	<script src="files/Js/GeekySharma.js"></script>
+	<link rel="stylesheet" href="files/Editor.css">
+	<!--<script src="https://code.responsivevoice.org/responsivevoice.js"></script>-->
+    <link rel="icon" href="images\title.png">
+    
+</head>
+	<body id="isc" style="overflow-y:scroll;height:1000px;">
+		<script></script>
+		<style>
+			p {
+				visibility:visible
+			}
+		</style>
+		<div class="load" style="display:none;">
+            <img src="images\load\bg.jpg" class="load_bg_img"/>
+            <div class="load_bg"></div>
+            <div class="load_body" style="z-index:2;">
+                <font class="title_load">editor</font>
+                <div class="load_titles_group" style="z-index:2;height:100px;position:absolute;">
+                    <font class="about_load_title load_titles">about</font>
+                    <font class="lang_load_title load_titles">language</font>
+                    <font class="intro_load_title load_titles">introduce</font>
+                    <font class="sel_load_title load_titles">select</font>
+                    <font class="templates_load_title load_titles">templates</font> <!-- 305px , 392px , 499px , {604px:70px}-->
+                </div>
+                <hr color="#3494ff" class="indicate"/>
+                <div class="load_box">
+                    <p class="about_load_par load_Sec" style="display:block;">editor is an authorised web application particularly developed for 2D and 3D box designing and online image formatting. <br />
+                           <font style="margin-left:30px;">editor also provides</font> several slots to save your project temporarily or permanently both. Temporarily saved projects formats when you refresh this page.<br />
+                        <font style="margin-left:30px;">editor is also helpful</font> web application for web designers and developers because it provides a developing tool and prepared HTML and CSS code of the box you've designed.
+                        
+                    </p>
+                    <div class="lang_load_par load_Sec" style="display:none;line-height:50px;top:20px;">
+                        <label for="RAdio1" style="color:rgb(160,160,160);background:;font-size: 29px;margin-left:20px;margin-top:-40px;">
+						        <input type="radio" id="RAdio1" class="editor_lang" style="margin-left: 0px;" name="editor_lang" value="hindi" checked>
+						        <div class="ob"></div>
+						       <font style="font-family:Krishna;">fgUnh</font>
+					    </label><br />
+                        <label for="RAdio2" style="color:rgb(160,160,160);font-size: 29px;margin-left:20px;margin-top:-50px;">
+						        <input type="radio" id="RAdio2" class="editor_lang" style="margin-left: 0px;" name="editor_lang" value="english">
+						        <div class="ob"></div>
+						        english         
+					    </label><br />
+                        
+                    </div>
+                    <div class="intro_user_load_par load_Sec" style="display:none;line-height:50px;top:20px;">
+                        <input spellcheck="false" class="user_name" placeholder="your name" maxlength="10" dir="ltr" style="text-align:left;box-sizing: border-box;padding-left:20px;background:rgb(247,247,247);width:439px;height:50px;top:40px;left:30px;letter-spacing:3px;"/>
+                        <p style="color:rgb(160,160,160);position:relative;left:390px;top:-30px;font-size:20px;font-family:monospace;">
+                            <font class="name_letters">0</font>
+                            <font class="name_total"> / 10</font>
+                        </p>
+                        <p style="color:rgb(150,150,150);font-size:22px;line-height:30px;width:454px;position:relative;left:40px;top:-45px;">if you don't want to share your name , you can skip this step ...</p>
+                        <br />
+                       
+                    </div>
+                    <div class="select_type_editor_user_load_par load_Sec" style="display:none;line-height:50px;top:20px;">
+                        <div class="2D_type_edit type_edit">
+                            <div class="slide_img"></div>
+                            <font class="sel_type">2D editor</font>
+                        </div>
+                            <div class="2D_types" style="background:;position:relative;top:-10px;left:100px;display:none;height:120px;">
+                                <label for="2D_radio_1" style="color:rgb(160,160,160);background:;font-size: 29px;position:absolute;top:15px;">
+						            <input type="radio" style="left:-405px;" id="2D_radio_1" style="" name="type_editor_re" value="2D_normal" checked>
+						            <img src="J:images\load\radio_Checked.jpg" style="top:-10px;" class="radio_checked"/>
+                                    <img src="images\load\normal.png" style="" class="nor_dev_imgs"/>
+						           <font style="position:relative;left:-50px;top:-25px;">normal</font>
+					            </label><br />
+                                <label for="2D_radio_2" style="color:rgb(160,160,160);background:;font-size: 29px;position:absolute;top:85px;">
+						            <input type="radio" id="2D_radio_2" style="" style="" name="type_editor_re" value="2D_dev" checked>
+						            <img src="J:images\load\radio_Checked.jpg" class="radio_checked"/>
+                                    <img src="images\load\developer.png" style="top:-12px;left:-72px;width:70px;transform:scale(0.7);" class="nor_dev_imgs"/>
+						           <font style="position:relative;left:-70px;top:-35px;">developer</font>
+					            </label>
+                            </div>
+                        <div class="3D_type_edit type_edit">
+                            <div class="slide_img"></div>
+                            <font class="sel_type">3D editor</font>
+                        </div>
+                            <div class="3D_types" style="background:;position:relative;top:-10px;left:100px;display:none;height:120px;">
+                                <label for="RAdio1" style="color:rgb(160,160,160);background:;font-size: 29px;position:absolute;top:15px;">
+						            <input type="radio" style="left:-405px;" id="RAdio5" class="editor_lang" style="" name="type_editor_re" value="2D_normal" checked>
+						            <img src="J:images\load\radio_Checked.jpg" style="top:-10px;" class="radio_checked"/>
+                                    <img src="images\load\normal.png" style="" class="nor_dev_imgs"/>
+						           <font style="position:relative;left:-50px;top:-25px;">normal</font>
+					            </label><br />
+                                <label for="RAdio1" style="color:rgb(160,160,160);background:;font-size: 29px;position:absolute;top:85px;">
+						            <input type="radio" id="RAdio6" style="" class="editor_lang" style="" name="type_editor_re" value="2D_dev" checked>
+						            <img src="J:images\load\radio_Checked.jpg" class="radio_checked"/>
+                                    <img src="images\load\developer.png" style="top:-12px;left:-72px;width:70px;transform:scale(0.7);" class="nor_dev_imgs"/>
+						           <font style="position:relative;left:-70px;top:-35px;">developer</font>
+					            </label>
+                            </div>
+                        <div class="img_type_edit type_edit">
+                            <div class="slide_img"></div>
+                            <font class="sel_type">image editor</font>
+                        </div>
+                                <div class="img_types" style="position:relative;top:-10px;left:100px;display:none;height:120px;">
+                                <label for="RAdio1" style="color:rgb(160,160,160);background:;font-size: 29px;position:absolute;top:15px;">
+						            <input type="radio" style="left:-405px;" id="RAdio3" class="editor_lang" style="" name="type_editor_re" value="2D_normal" checked>
+						            <img src="J:images\load\radio_Checked.jpg" style="top:-10px;" class="radio_checked"/>
+                                    <img src="images\load\normal.png" style="" class="nor_dev_imgs"/>
+						           <font style="position:relative;left:-50px;top:-25px;">normal</font>
+					            </label><br />
+                                <label for="RAdio1" style="color:rgb(160,160,160);background:;font-size: 29px;position:absolute;top:85px;">
+						            <input type="radio" id="RAdio4" style="" class="editor_lang" style="" name="type_editor_re" value="2D_dev" checked>
+						            <img src="J:images\load\radio_Checked.jpg" class="radio_checked"/>
+                                    <img src="images\load\developer.png" style="top:-12px;left:-72px;width:70px;transform:scale(0.7);" class="nor_dev_imgs"/>
+						           <font style="position:relative;left:-70px;top:-35px;">developer</font>
+					            </label>
+                            </div>
+                        
+                    </div>
+                    <div class="templates_user_load_par load_Sec" style="display:none;line-height:50px;top:20px;">
+                        <div class="templates_2D blank">
+                            <img src="images\templates\blank.png" class="templates_imgs"/>
+                        </div>
+                        <div class="templates_2D tem1">
+                            <img src="images\templates\tem_1.png" class="templates_imgs"/>
+                        </div>
+                        <div class="templates_2D tem2">
+                            <img src="images\templates\tem_2.png" class="templates_imgs"/>
+                        </div>
+                        <div class="templates_2D tem3">
+                            <img src="images\templates\tem_3.png" class="templates_imgs"/>
+                        </div>
+                    </div>
+                </div>
+                 <button class="nxt_load" style="">next</button>
+                            <div class="nxt_load_layer_lang nxt_load_layer" style="display:none;opacity:0;"></div>
+                            <div class="nxt_load_layer_intro nxt_load_layer" style="display:none;opacity:0;"></div>
+                            <div class="nxt_load_layer_select nxt_load_layer" style="display:none;opacity:0.9;"></div>
+                            <div class="nxt_load_layer_tem nxt_load_layer" style="display:none;opacity:0;"></div>
+                <font class="copy_load" style="font-size:15px;opacity:0.4;font-family:Calibri;top:120px;">&copy; 2018 ISC</font>
+            </div>
+        </div>
+        <div class="more" style="display:block;width:102.5%;transform-origin: top;transform: scaleY(1.3);position: fixed;">
+			<img src="images\brightness.png" class="more_imgso jugad  mbrght">
+			
+			<img src="images\more_det.png" class="more_imgso jugad mstates">
+			<img src="images\set2.png" class="more_imgso jugad settings" style="transform:scale(1.2)">
+			<img src="images\save.png" class="more_imgso jugad save_projects" style="transform:scale(0.86);display:none">
+            <img src="images\dev_tools.png" class="more_imgso jugad dev_tools" style="display:none;transform:scale(1.3)">
+            <img src="images\vertical.png" style="margin-left:170px;display:none;" class="m_ver algn">
+			<img src="images\horizontal-tablet.png" style="-webkit-filter:brightness(0.8);display:none;" class=" m_hor algn">
+		</div>
+		<div class="2D_box_editor" style="display:block;">
+			<div class="title" style="width:150px;top:66px;left:50px;z-index:2">Customize</div>
+			<div class="title" style="z-index:2;left:67px;top:487px;">Output</div><!-- 321px -->
+			<div class="customize divs" style="margin-top:10px;height:340px;position:absolute;transform-origin: top left;transform:scaleY(1.2) scaleX(.98)">
+				<div class="cust_titles" style="overflow:hidden;text-overflow:ellipsis;transition:2s;">
+                        <img class="more_tabs_left more_tabs" style="top:-432px;left:-465px;" src="images\more_tabs_left.png" />
+                       <p class="tab_para" style="position:relative;margin:0;width:120%;overflow:hidden;text-overflow:ellipsis;transition:0.3s;">
+                            <font class="gnrl oth selected_status">general</font>
+                            <font class="filter oth">filter</font>
+					        <font class="dimn oth">dimensions</font>
+					        <font class="bg oth">background</font>
+					        <font class="txt oth">text</font>
+					        <font class="border oth">border</font>
+					        <font class="trns oth">transform</font>
+                            <font class="animation_uni oth">animation</font>
+					        <font class="frms oth">frames</font>
+					        <font class="sets oth">sets</font>
+                       </p>
+                       <img class="more_tabs_right more_tabs" style="top:-433px;left:475px;" src="images\more_tabs_right.png" />
+				</div>
+				<div class="cust_work_place gnrl_workplace" style="display:none;overflow:hidden">
+					    opacity <font style="margin-left:43px">:</font>
+                    	<input min="0" style="margin:0;position:relative;left:13px" max="1" step="0.01" class="op_r" id="n_op_r" type="range" name="" value="1">
+                        <div class="reset ro" style="margin-left:10px"></div>
+                    	<br>
+					
+                        <font style="margin-left:00px;margin-top:20px;">shadow </font><font style="margin-left:38px;">:</font>
+						<select class="bx_type n_box_shadow_obj box_shadow_obj" id="n_bx_type" name="">
+							<option selected>outset</option>
+							<option value=" ">inset</option>
+						</select>
+						<input type="number" class="bs1 n_box_shadow_obj box_shadow_obj" id="n_bs1" style="width:50px;" name="" value="0">
+						<input type="number" class="bs2 n_box_shadow_obj box_shadow_obj" id="n_bs2" style="width:50px;" name="" value="0">
+						<input type="number" class="bs3 n_box_shadow_obj box_shadow_obj" id="n_bs3" style="width:50px;" min="0" name="" value="26">
+						<input type="number" class="bs4 n_box_shadow_obj box_shadow_obj" id="n_bs4" style="width:50px;" name="" value="0">
+						<input type="color" class="bxclr n_bxclr n_box_shadow_obj box_shadow_obj" id="n_bxclr" style="position: relative;top:3px;height: 29px;width:50px;" name="" value="#0080ff">
+                       <br />
+                    <font style="margin-top:20px;">cursor </font><font style="margin-left:55px;">:</font>
+                        <select class="cursor_sel n_cursor_sel" style="left:1px;width:200px;" name="">
+							<option selected>alias</option>
+							<option>all-scroll</option>
+                            <option>auto</option>
+                            <option>cell</option>
+                            <option>col-resize</option>
+                            <option>context-menu</option>
+                            <option>copy</option>
+                            <option>crosshair</option>
+                            <option>default</option>
+                            <option>e-resize</option>
+                            <option>ew-resize</option>
+                            <option>help</option>
+                            <option>n-resize</option>
+                            <option>ne-resize</option>
+                            <option>move</option>
+                            <option>nesw-resize</option>
+                            <option>no-drop</option>
+                            <option>none</option>
+                            <option>not-allowed</option>
+                            <option>ns-resize</option>
+                            <option>nw-resize</option>
+                            <option>nwse-resize</option>
+                            <option>pointer</option>
+                            <option>progress</option>
+                            <option>row-resize</option>
+                            <option>s-resize</option>
+                            <option>se-resize</option>
+                            <option>sw-resize</option>
+                            <option>w-resize</option>
+                            <option>text</option>
+                            <option>vertical-text</option>
+                            <option>wait</option>
+                            <option>zoom-in</option>
+                            <option>zoom-out</option>
+                            
+						</select>
+					 
+				</div>
+                <div class="cust_work_place filter_workplace" style="display:none;overflow:hidden;">
+					brightness <font style="margin-left:45px;">:</font> <input type="range" min="0" max="2" step="0.01" style="width:140px;" value="1" class="filter_brightness filter_obj"/> <div class="reset rb" ></div>
+                    <font style="margin-left:20px;"> blur <font>:</font> <input type="range" value="0" min="0" max="20" style="width:140px;" step="0.01" class="filter_blur filter_obj"/> </font> <div class="reset rblur" ></div>
+                    <font style="margin-left:15px;"> sepia <font style="margin-left:8px;">:</font> <input type="range" min="0" max="1" value="0" step="0.01" style="width:140px;" class="filter_sepia filter_obj"/> </font> <div class="reset rsepia" ></div> <br />
+                    <font style=""> contrast <font style="margin-left:71px;">:</font> <input value="0" type="range" style="width:140px;" min="1" max="10" step="0.01" class="filter_contrast filter_obj"/> </font> <div class="reset rcontrast" ></div>
+                    <font style="margin-left:20px;"> gray <font>:</font> <input type="range" value="0" min="0" max="1" style="width:140px;" step="0.01" class="filter_gray filter_obj"/> </font> <div class="reset rgray" ></div>
+                    <font style="margin-left:13px;"> invert <font style="">:</font> <input value="0" type="range" min="0" max="1" style="width:140px;" step="0.01" class="filter_invert filter_obj"/> </font> <div class="reset rinvert" ></div> <br />
+                    hue - rotate <font style="margin-left:30px;">:</font> <input type="range" style="width:140px;" step="0.01" value="0" class="filter_hue_rotate filter_obj"/> <div class="reset rhue" ></div>
+                    <font style="margin-left:17px;"> saturate<font>:</font> <input min="0" max="1" type="range" style="width:140px;" value="1" step="0.01" class="filter_saturate filter_obj"/> </font> <div class="reset rsat" ></div> 
+                    
+				</div>
+				<div class="cust_work_place dimn_workplace" style="display:none;">
+					height : 	<input class="box_h" type="number" value="200" min="0" max="1000"><Br>
+					width &nbsp;: <input class="box_w" type="number" name="" min="0" max="1000" value="300">
+				</div>
+				<div class="cust_work_place bg_workplace" style="display:none;">
+                    image <font style="position:relative;left:148px">:</font>
+                    <label for="fileBg">
+                        <input id="fileBg" type="file" style="display:none;" accept="image" />
+                        <div class="fileName" style="height:35px;width:585px;border:3px solid #0080ff;position:relative;top:-52px;left:245px;border-radius:5px 5px 5px 5px;margin:0;padding:0;font-size:25px;overflow: hidden"><font class="fileNameText" style="position:relative;top:-18px;left:10px;font-family:Consolas;text-transform:lowercase;">insert image</font></div>
+                    </label><br />
+					<font style="margin-left:00px;position:relative;top:-105px;">background <font style="margin-left:82px">:</font> <input value="#0080ff" style="width:556.5px;" type="color" class="bgcolor"></font>
+                    <button style="top:5px;left:00px;height:38px;position:relative;top:-101px" class="trans_but bg_color_trns">
+							<img src="images\transparent.png" class="transparent">
+					</button>
+					<BR><font style="margin-left:00px;margin-top:20px;position:relative;top:-105px;">linear - gradient <font style="margin-left:34px">:</font>
+						<input type="number" style="width:105px;" class="ln_gra_deg ln_gra" name="" value="90">
+						<input type="color" class="ln_gra_cl1 ln_gra bg_trns" style="width:105px;position:relative;top:4px;" name="" value="#0080ff">
+						<input type="color" class="ln_gra_cl2 ln_gra bg_trns" style="width:105px;position:relative;top:4px;" name="" value="#0080ff">
+                        <input type="color" class="ln_gra_cl3 ln_gra bg_trns" style="width:105px;position:relative;top:4px;" name="" value="#0080ff">
+                        <input type="color" class="ln_gra_cl4 ln_gra bg_trns" style="width:105px;position:relative;top:4px;" name="" value="#0080ff"></font>
+                    <BR><font style="margin-left:00px;margin-top:20px;position:relative;top:-105px;">radial - gradient <font style="margin-left:34px">:</font>
+						<input type="color" class="rad_gra_cl1 rad_gra bg_trns" style="width:105px;position:relative;top:4px;" name="" value="#0080ff">
+						<input type="color" class="rad_gra_cl2 rad_gra bg_trns" style="width:105px;position:relative;top:4px;margin-left:10px;" name="" value="#0080ff">
+						<input type="color" class="rad_gra_cl3 rad_gra bg_trns" style="width:105px;position:relative;top:4px;" name="" value="#0080ff">
+						<input type="color" class="rad_gra_cl4 rad_gra bg_trns" style="width:105px;position:relative;top:4px;" name="" value="#0080ff">
+						<input type="color" class="rad_gra_cl5 rad_gra bg_trns" style="width:105px;position:relative;top:4px;" name="" value="#0080ff"></font>
+			    </div>
+				<div class="cust_work_place txt_workplace" style="display:block;height:230px;overflow-style:marquee;overflow:scroll;">
+					<textarea   spellcheck="false" style="height:120px;width:853px;top:15px;" class="addt">vkidk Lokxr gS A</textarea>
+					<img class="enter_key" src="images\enter.png">
+					<img class="useem" src="images\emojis\ind.png">
+                    <img class="speak" src="images\speak.png" ><BR>
+					color <font style="margin-left:8px">:</font> <input style="top:5px;width:70px;" value="#ffffff" class="txtcolor" type="color">
+						<button style="top:10px;left:00px;" class="trans_but txt_color_trns">
+							<img src="images\transparent.png" class="transparent">
+						</button>
+					<font style="margin-left:22px;">letter - spacing</font> <font style="margin-left:8px">:</font> <input value="0" class="let_sp" type="number">
+					<font style="margin-left:22px;">text-align</font> <font style="margin-left:42px">:</font>
+						<select class="txt_align" style="width:117px;margin-left:7px;" name="">
+							<option>left</option>
+							<option>right</option>
+							<option selected>center</option>
+							<option>justify</option>
+						</select><Br>
+						font <font style="margin-left:18px">:</font>
+						<div class="txt_font whatever" style="width:90px;">Google</div>
+							
+						<font style="margin-left:35px;">line - height</font> <font style="margin-left:42px">:</font> <input value="32" class="line_hght" type="number">
+						<font style="margin-left:22px;">background</font> <font style="margin-left:13px">:</font> <input style="margin-left: 7px;width:88px;top:5px;" value="#0080ff" class="txtbgcolor" type="color">
+						<button style="top:10px;left:00px;" class="trans_but txt_bg_color_trns">
+							<img src="images\transparent.png" class="transparent">
+						</button><BR>
+							style <font style="margin-left:12px">:</font>
+								<select class="f_s" style="width:97px;" name="">
+									<option selected>normal</option>
+									<option>italic</option>
+									<option>oblique</option>
+								</select>
+							<font style="margin-left:22px;">word-spacing</font> <font style="margin-left:26px">:</font> <input value="0" class="w_spacing" type="number">
+                            <font style="margin-left:22px;">background</font> <font style="margin-left:13px">:</font> 
+                                <input style="width:54px;margin-left:7px;" value="0" class="txt_bg_lg_deg txt_bg_lg" type="number"/>
+                                <input style="margin-left: 0px;width:25px;top:5px;" value="#0080ff" class="txtbglgcolor1 txt_bg_lg" type="color">
+                                <input style="margin-left: 0px;width:26px;top:5px;" value="#0080ff" class="txtbglgcolor2 txt_bg_lg" type="color">
+							<br />
+							top <font style="margin-left:26px">:</font>
+								<input type="number" class="optop" name="" value="0">
+							<font style="margin-left:22px;">left <font style="margin-left:138px">:</font>
+								<input type="number" name="" class="opleft" value="0"></font>
+							<font style="margin-left:22px;">case <font style="margin-left:98px">:</font>
+							<select class="txt_cs" style="width:117px;margin-left:7px;" name="">
+								<option selected>none</option>
+								<option>capitalize</option>
+								<option>lowercase</option>
+								<option>uppercase</option>
+							</select></font><BR>
+								<font style="margin-left:0px;">decoration</font> <font style="margin-left:23px">:</font>
+									<select class="txt_dec_type txt_dec" style="width:105px;margin-left:10.5px;" name="">
+										<option>none</option>
+										<option>underline</option>
+										<option>overline</option>
+										<option>line-through</option>
+                           			</select>
+									<input type="color" class="dec_clr txt_dec" style="top:4px;width:104px;" name="" value="#ffffff">
+									<select class="txt_dec_sty txt_dec" style="width:110px;margin-left:10.5px;" name="">
+										<option selected>solid</option>
+										<option>double</option>
+										<option>wavy</option>
+										<option>dashed</option>
+										<option>dotted</option>
+									</select>
+							<font style="margin-left:22px;">opacity <font style="margin-left:66px">:</font>
+								<input type="range" class="top" min="0" max="1" step="0.01" value="1" style="width:97px;margin-left:7px;" name="" value="">
+								<div class="reset rto"></div></font>
+								<BR>
+
+									<font style="margin-left:0px;margin-top:20px;">shadow <font style="margin-left:23px;">:</font>
+										<input type="number" class="tbs1 txt_shadow_uni" style="width:81px;" name="" value="0">
+										<input type="number" class="tbs2 txt_shadow_uni" style="width:81px;" name="" value="0">
+										<input type="number" class="tbs3 txt_shadow_uni" style="width:81px " min="0"  name="" value="2">
+										<input type="color" class="tbxclr txt_shadow_uni" style="position: relative;top:3px;height: 29px;width:93px;" name="" value="#ffffff">
+									</font>
+								<font style="margin-left:22px;">size <font style="margin-left:108.5px">:</font>
+									<input type="number" style="margin-left:7px;width:115px" min="0" name="font_size" value="28"></font>
+                                    <font style="margin-left:0px;">weight <font style="margin-left:34.5px;">:</font>
+							<select class="f_weight" style="width:106px;margin-left:8px;" name="">
+								<option selected>normal</option>
+								<option>lighter</option>
+								<option>bold</option>
+								<option>bolder</option>
+							</select></font>
+                                <font style="margin-left:27px;display:none">blend  <font style="margin-left:30.5px">:</font>
+									<select class="text-blend-mode" style="display:none;width: 120px">
+										<option selected>normal</option>
+										<option>multiply</option>
+										<option>screen</option>
+										<option>overlay</option>
+										<option>darken</option>
+										<option>lighten</option>
+										<option>color-dodge</option>
+										<option>color-burn</option>
+										<option>different</option>
+										<option>exclusion</option>
+										<option>hue</option>
+										<option>saturation</option>
+										<option>color</option>
+										<option>luminosity</option>
+								</select></font>
+                                <font style="margin-left:22px;">width <font style="margin-left:47.5px">:</font>
+									<input type="number" style="margin-left:7px;width:112px;" min="0" name="op_width" value="300"></font>
+				</div>
+				<div class="cust_work_place bor_workplace" style="display:none;">
+					<div class="slidetbstyle slideoth" style="position:relative;left:10px;">
+						<div class="sectionbstyle" style="floaT:left;WIDTH:100px;position: relative;z-index:1;left:350px;top:-12px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">style</div>
+						<hr style="display:inline-block;position:relative;top:-40px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+					</div>
+					<div style="display:;position:relative;top:-12px;left:0px;height:150px;" class="slidebstyle slideb">
+						<span style="margin-left:00px;">top <Font style="margin-left:60px;"> : </font>
+							<select class="tbor_style" style="width:113px;" name="">
+							    <option>none</option>
+							    <option>solid</option>
+							    <option>groove</option>
+							    <option selected>double</option>
+							    <option>dotted</option>
+							    <option>dashed</option>
+							    <option>inset</option>
+							</select>
+						</span>
+						<span style="margin-left:302px;">left <Font style="margin-left:28px;"> : </font>
+							<select class="lbor_style" style="width:113px;" name="">
+							    <option>none</option>
+							    <option>solid</option>
+							    <option>groove</option>
+							    <option selected>double</option>
+							    <option>dotted</option>
+							    <option>dashed</option>
+							    <option>inset</option>
+							</select>
+						</span><BR>
+						<span style="margin-left:00px;">bottom <Font style="margin-left:14px;"> : </font>
+							<select class="bbor_style" style="width:113px;" name="">
+							    <option>none</option>
+							    <option>solid</option>
+							    <option>groove</option>
+							    <option selected>double</option>
+							    <option>dotted</option>
+							    <option>dashed</option>
+							    <option>inset</option>
+							</select>
+						</span>
+						<span style="margin-left:302px;">right <Font style="margin-left:12px;"> : </font>
+							<select class="rbor_style" style="width:113px;" name="">
+							    <option>none</option>
+							    <option>solid</option>
+							    <option>groove</option>
+							    <option selected>double</option>
+							    <option>dotted</option>
+							    <option>dashed</option>
+							    <option>inset</option>
+							</select>
+						</span><BR>
+						<select class="wbor_style" style="width:113px;position:relative;top:-105px;lefT:335px;" name="">
+							<option>none</option>
+							<option>solid</option>
+							<option>groove</option>
+							<option selected>double</option>
+							<option>dotted</option>
+							<option>dashed</option>
+							<option>inset</option>
+						</select>
+					</div>
+
+					<div class="slidetbcolor slideoth" style="margin-top:98px;position:relative;left:10px;">
+						<div class="sectionbstyle" style="WIDTH:100px;position: relative;z-index:1;left:350px;cursor:alias;display:inline-block;float:left;height:50px;top:-112px;text-align:center;background:white;">color</div>
+						<hr style="display:inline-block;position:relative;top:-140px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+					</div>
+					<div style="display:none;position:relative;top:-90px;height:160px;" class="slidebcolor slideb">
+						<span style="margin-left:0px;">top <Font style="margin-left:60px;"> : </font>
+							<input type="color" class="btcolor bclr_uni" value="#ffffff" style="position:relative;top:3px;width:80px;" name="" value="#0080ff">
+                            <button style="top:8px;left:00px;" class="trans_but top_bor_clr_trns">
+							    <img src="images\transparent.png" class="transparent">
+						    </button>
+						</span>
+						<span style="margin-left:302px;">left <Font style="margin-left:28px;"> : </font>
+							<input type="color" class="blcolor bclr_uni" value="#ffffff" style="position:relative;top:3px;width:80px;" name="" value="#0080ff">
+                            <button style="top:7px;left:00px;" class="trans_but left_bor_clr_trns bor_clr_trns_uni">
+							    <img src="images\transparent.png" class="transparent">
+						    </button>
+						</span><BR>
+						<span style="margin-left:0px;">bottom <Font style="margin-left:15px;"> : </font>
+							<input type="color" class="bbcolor bclr_uni" value="#ffffff" style="position:relative;top:3px;width:80px;" name="" value="#0080ff">
+                            <button style="top:7px;left:-1px;" class="trans_but bot_bor_clr_trns bor_clr_trns_uni">
+							    <img src="images\transparent.png" class="transparent">
+						    </button>
+						</span>
+						<span style="margin-left:302px;">right <Font style="margin-left:12px;"> : </font>
+							<input type="color" class="brcolor bclr_uni" value="#ffffff" style="position:relative;top:3px;width:80px;" name="" value="#0080ff">
+                            <button style="top:7px;left:-1px;" class="trans_but right_bor_clr_trns bor_clr_trns_uni">
+							    <img src="images\transparent.png" class="transparent">
+						    </button>
+						</span>
+						<input type="color" class="wbcolor bclr_uni" value="#ffffff" style="position:relative;width:80px;top:-30px;lefT:-422px;" name="" value="#0080ff">
+                        <button style="top:-25px;left:-423px;" class="trans_but bor_clr_trns bor_clr_trns_uni">
+							    <img src="images\transparent.png" class="transparent">
+						    </button>
+					</div>
+
+					<div class="slidetbwidth slideoth" style="margin-top:16px;position:relative;left:10px;">
+						<div class="sectionbstyle" style="WIDTH:100px;position: relative;z-index:1;left:350px;cursor:alias;display:inline-block;float:left;top:-110px;text-align:center;background:white;height:30px;"><p style="position:relative;top:-50px;">width</p></div>
+						<hr style="display:inline-block;position:relative;top:-140px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+					</div>
+					<div style="display:none;position:relative;top:-85px;height:160px;" class="slidebwidth slideb">
+						<span style="margin-left:0px;">top <Font style="margin-left:60px;"> : </font>
+							<input type="number" min="0" class="btwidth" name="" value="10">
+						</span>
+						<span style="margin-left:302px;">left <Font style="margin-left:28px;"> : </font>
+							<input type="number" min="0" class="blwidth" name="" value="10">
+						</span><BR>
+						<span style="margin-left:0px;">bottom <Font style="margin-left:15px;"> : </font>
+							<input type="number" min="0" class="bbwidth" name="" value="10">
+						</span>
+						<span style="margin-left:302px;">right <Font style="margin-left:12px;"> : </font>
+							<input type="number" min="0" class="brwidth" name="" value="10">
+						</span>
+						<input type="number" class="wbwidth" min="0" style="position:relative;top:-34px;left:-412px;" name="" value="10">
+					</div>
+
+					<div class="slidetbradius slideoth" style="margin-top:16px;position:relative;left:10px;">
+						<div class="sectionbstyle" style="WIDTH:100px;position: relative;z-index:1;left:350px;cursor:alias;display:inline-block;float:left;height:30px;top:-116px;text-align:center;background:white;"><p style="position:relative;top:-45px;">radius</p></div>
+						<hr style="display:inline-block;position:relative;top:-140px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+					</div>
+                    
+					<div style="display:none;position:relative;top:-80px;height:80px;" class="slidebradius slideb">
+                        <img src="images\th_dots.png" style="position:relative;top:-20px;left:-24px;float:right;margin-right: 10px;height:25px;width:5px;" class="border_radius_abt"><br />
+						<span style="margin-left:0px;position:relative;top:-68px;">top - left <Font style="margin-left:60px;"> : </font>
+							<input type="range" class="btlrad" min="0" step="0.5" max="150" style="width:100px;" name="" value="75">
+						</span>
+						<div class="round_shape N_round_shape"></div>
+                        <div class="half_round_shape N_half_round_shape"></div>
+						<div class="square_shape N_square_shape"></div>
+						<span style="margin-left:242px;position:relative;top:-68px;">top - right <Font style="margin-left:56px;"> : </font>
+							<input type="range" class="btrrad" min="0" step="0.5" max="150" style="width:100px;" name="" value="75">
+						</span><BR>
+						<span style="margin-left:0px;position:relative;top:-68px;">bottom - left <Font style="margin-left:13px;"> : </font>
+							<input type="range" class="bblrad" style="width:100px;" step="0.5" min="0" max="150" name="" value="75">
+						</span>
+						<span style="margin-left:242px;position:relative;top:-68px;">bottom - right <Font style="margin-left:12px;"> : </font>
+							<input type="range" class="bbrrad" style="width:100px;" step="0.5" min="0" max="150" name="" value="75">
+						</span>
+                        <div class="sort_bor_rad" style="display:none;">
+                            <label for="Radio1" style="font-size: 29px;margin-left:10px;">
+						        <input type="radio" id="Radio1" class="set_type" style="margin-left: 0px;" name="bor_Rad_type" value="px" checked>
+						        <div class="ob"></div>
+						         pixels
+					        </label><br /> 
+                            <label for="Radio2" style="font-size: 29px;margin-left:10px;margin-top:-50px;">
+						        <input type="radio" id="Radio2" class="set_type" style="margin-left: 0px;" name="bor_Rad_type" value="%">
+						        <div class="ob"></div>
+						         %
+					        </label>
+                        </div>
+					</div>
+				</div>
+				<div class="cust_work_place trns_workplace" style="display:none;">
+					rotate - X <font style="margin-left:38.1px">:</font> <input class="r_X" style="width:100px;" type="range" min="0" step="1" max="360" value="0">
+					<font style="margin-left:27px;">rotate - Y</font> <font style="margin-left:12px">:</font> <input class="r_Y" style="width:100px;" type="range" min="0" step="1" max="360" value="0">
+					<font style="margin-left:20px;">rotate - Z</font> <font style="margin-left:12px">:</font> <input class="r_Z" style="width:100px;" type="range" min="0" step="1" max="360" value="0"><Br>
+					scale - X<font style="margin-left:56.5px">:</font> <input  class="scaleX" min="0" max="3" step="0.01" type="range" name="" value="1" style="width:100px;">
+					<font style="margin-left:30px;">scale - Y</font> <font style="margin-left:22px">:</font> <input step="0.01" min="0" max="3" class="scaleY" type="range" value="1" style="width:100px;">
+					<font style="margin-left:22px;">scale - Z</font> <font style="margin-left:24px">:</font> <input step="0.01" min="0" max="3" class="scaleZ" type="range" value="1" style="width:100px;">
+					<BR>
+						skew - X<font style="margin-left:55.5px">:</font> <input  class="skewX" style="width:100px;" type="range" name="" value="0">
+						<font style="margin-left:30px;">skew - Y</font> <font style="margin-left:21px">:</font> <input class="skewY" style="width:100px;" type="range" value="0"><br />
+					<font style="margin-left:0px;">origin</font> <font style="margin-left:76px">:</font>
+						<select class="trns_origin" style="width:210.66px;text-align:center;" name="">
+							<option selected>center</option>
+							<option>top</option>
+							<option>left</option>
+							<option>right</option>
+							<option>bottom</option>
+                            <option>top - left</option>
+                            <option>top - right</option>
+                            <option>bottom - left</option>
+                            <option>bottom - right</option>
+						</select>
+                        <input type="number" value="50" min="0" max="100" class="trnsorgn1" style="width:210.66px;text-align:center;" placeholder="x - coordinate"/>
+                        <input type="number" value="50" min="0" max="100" class="trnsorgn2" style="width:216px;text-align:center;" placeholder="y - coordinate"/>
+						<BR>
+						perspective <font style="margin-left:10px;">:</font> <input type="number" style="width:670px;" min="0" max="1000" name="perspective" value="100"><BR>
+						per - origin <font style="margin-left:16px;">:</font>
+						<input type="number" value="50" class="perorgn" style="width:330px;text-align:center;" />
+                        <select class="per_orgn_sel" style="width:325px;">
+                            <option>center</option>
+                            <option>top</option>
+                            <option>left</option>
+                            <option>right</option>
+                            <option>bottom</option>
+                        </select>
+				</div>
+                <div class="cust_work_place animation_workplace" style="display:none;height:230px;">
+					<div class="slideAnimeSettings slideAnimeOth" style="position:relative;left:10px;">
+						<div class="sectionAnimeSettings" style="floaT:left;WIDTH:140px;position: relative;z-index:1;left:350px;top:-12px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">settings</div>
+						<hr style="display:inline-block;position:relative;top:-40px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+                    </div>
+                    <div style="position:relative;top:2px;height:150px;" class="slideDownAnimeSettings slideAnime">
+                        duration <font style="margin-left:16px;">:</font> <input type="number" class="AnimeDurationSec AnimeSet" min="0" max="59" value="0" style="width:55px;"/> <input value="0" type="number" min="0" max="99" style="width:55px;" class="AnimeDurationMiniSec AnimeSet"/>
+                        <font style="margin-left:52px">count <font style="margin-left:39px;">:</font> <input class="AnimeSet AnimationCount" min="1" value="1" type="number" style="width:103px"/></font>
+                        <font style="margin-left:50px">mode <font style="margin-left:18px;">:</font> 
+                            <select class="AnimationFillMode" style="width:124px;">
+                                <option>forwards</option>
+                                <option selected>backwards</option>
+                                <option>both</option>
+                            </select>
+                        </font><br>
+                        direction <font style="margin-left:10px">:</font> 
+                            <select class="AnimationDirection " style="width:128px;">
+                                <option>normal</option>
+                                <option>alternate</option>
+                                <option>reverse</option>
+                                <option>alternate-reverse</option>
+                            </select>
+                        <font style="margin-left:50px">function <font style="margin-left:10px">:</font> 
+                            <select class="AnimationFunction">
+                                <option>linear</option>
+                                <option>ease</option>
+                                <option>ease-in</option>
+                                <option>ease-out</option>
+                                <option>ease-in-out</option>
+                                <option>step-start</option>
+                                <option>step-end</option>
+                            </select></font>
+                        <font style="margin-left:50px;">delay <font style="margin-left:22px">:</font> <input min="0" type="number" value="0" class="AnimeDelay AnimeSet" style="width:123px;"/> </font>
+                    </div>
+                    <div class="slideAnimeChanges slideAnimeOth" style="min-height:1200px;width:98%;border-top:6px solid rgba(0,0,0,.25);border-radius:20px 20px 20px 20px;position:relative;left:-5px;margin-top:50px;">
+						<div class="sectionAnimeSettings" style="floaT:left;WIDTH:155px;position: relative;z-index:1;left:350px;top:-39px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">set changes</div>
+					</div>  
+                    <div style="position:relative;top:-72px;" class="slideDownAnimeSetChanges slideAnime">
+                        <!-- general -->
+                        <div class="slideAnimeSetChangesGenreal slideAnimeSetChangesOth" style="position: relative;left:10px;top:-1090px;transform:scaleX(0.96);">
+						    <div class="sectionAnimeChanges" style="float:left;WIDTH:140px;position: relative;z-index:1;left:350px;top:-12px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">general</div>
+						    <hr style="display:inline-block;position:relative;top:-40px;z-index:0;margin-bottom:-52px;width:850px;left:10px" color="#0080ff">
+                        </div>
+                            <div class="slideAnimeSetChangesGeneralS slideAnimaSetChangesS" style="display:none;transform:scaleX(0.97);width:871px;position:relative;top:-1080px;left:20px;">
+                                 
+                                 <font style="margin-left:0px;">opacity <font style="margin-left:43px">:</font>
+						            <input min="0" max="1" id="ani_op ani_in" step="0.01" class="ani_op_r ani_in" type="range" name="" value="1">
+						            <div class="reset ro"></div></font><br />
+                                <font style="margin-left:00px;margin-top:20px;">shadow </font><font style="margin-left:38px;">:</font>
+						                <select class="ani_bx_type ani_box_shadow_obj ani_sel" id="ani_shadow" name="">
+							                <option selected>outset</option>
+							                <option>inset</option>
+						                </select>
+						                <input type="number" class="ani_bs1 ani_box_shadow_obj ani_in" id="ani_bx_1" style="width:50px;" name="" value="0">
+						                <input type="number" class="ani_bs2 ani_box_shadow_obj ani_in" id="ani_bx_2" style="width:50px;" name="" value="0">
+						                <input type="number" class="ani_bs3 ani_box_shadow_obj ani_in" id="ani_bx_3" style="width:50px;" min="0" name="" value="26">
+						                <input type="number" class="ani_bs4 ani_box_shadow_obj ani_in" id="ani_bx_4" style="width:50px;" name="" value="0">
+						                <input type="color" class="ani_bxclr ani_box_shadow_obj ani_in" id="ani_bx_clr" style="position: relative;top:3px;height: 29px;width:50px;" name="" value="#0080ff">
+                        </div>
+                        <!-- filter -->
+                        <div class="slideAnimeSetChangesFilter slideAnimeSetChangesOth" style="position:relative;left:10px;margin-top:-1020px;transform:scaleX(0.96);">
+						    <div class="sectionAnimeChanges" style="floaT:left;WIDTH:140px;position: relative;z-index:1;left:348px;position:absolute;top:-60px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">filter</div>
+						    <hr style="display:inline-block;position:relative;top:-40px;z-index:0;margin-bottom:-52px;width:850px;left:10px" color="#0080ff">
+                        </div>
+                            <div class="slideAnimeSetChangesFilterS slideAnimaSetChangesS" style="display:none;transform:scaleX(0.97);width:871px;position:relative;left:20px">
+                                brightness <font style="margin-left:45px;">:</font> <input type="range" min="0" max="2" step="0.01" style="width:140px;" value="1" class="ani_filter_brightness ani_in ani_filter_obj"/> <div class="reset ani_rb" ></div>
+                                <font style="margin-left:20px;"> blur <font>:</font> <input type="range" value="0" min="0" max="20" style="width:140px;" step="0.01" class="ani_filter_blur ani_in ani_filter_obj"/> </font> <div class="reset ani_rblur" ></div>
+                                <font style="margin-left:15px;"> sepia <font style="margin-left:8px;">:</font> <input type="range" min="0" max="1" value="0" step="0.01" style="width:120px;" class="ani_in ani_filter_sepia ani_filter_obj"/> </font> <div class="reset ani_rsepia" ></div> <br />
+                                <font > contrast <font style="margin-left:71px;">:</font> <input value="0" type="range" style="width:140px;" min="1" max="10" step="0.01" class="ani_filter_contrast ani_in ani_filter_obj"/> </font> <div class="reset ani_rcontrast" ></div>
+                                <font style="margin-left:20px;"> gray <font>:</font> <input type="range" value="0" min="0" max="1" style="width:140px;" step="0.01" class="ani_filter_gray ani_filter_obj ani_in"/> </font> <div class="reset ani_rgray" ></div>
+                                <font style="margin-left:13px;"> invert <font style="">:</font> <input value="0" type="range" min="0" max="1" style="width:120px;" step="0.01" class="ani_filter_invert ani_in ani_filter_obj"/> </font> <div class="reset ani_rinvert" ></div> <br />
+                                hue - rotate <font style="margin-left:30px;">:</font> <input type="range" style="width:140px;" step="0.01" value="0" class="ani_filter_hue_rotate ani_in ani_filter_obj"/> <div class="reset ani_rhue" ></div>
+                                <font style="margin-left:17px;"> saturate<font>:</font> <input min="0" max="1" type="range" style="width:140px;" value="1" step="0.01" class="ani_filter_saturate ani_in ani_filter_obj"/> </font> <div class="reset ani_rsat" ></div>  
+                            </div>
+                        <!-- dimensions -->
+                        <div class="slideAnimeSetChangesDimn slideAnimeSetChangesOth" style="position:relative;left:10px;top:145px;transform:scaleX(0.96);">
+						    <div class="sectionAnimeChanges" style="floaT:left;WIDTH:160px;position: absolute;z-index:1;left:340px;top:-143px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">dimensions</div>
+						    <hr style="display:inline-block;position:relative;top:-120px;z-index:0;margin-bottom:-52px;width:850px;left:10px" color="#0080ff">
+                        </div>
+                            <div class="slideAnimeSetChangesDimnS slideAnimaSetChangesS" style="display:none;transform:scaleX(0.97);width:871px;position:relative;top:60px;left:20px">
+                                 height : 	<input class="ani_box_h ani_in" type="number" value="200" min="0" max="1000"><Br>
+					             width &nbsp;: <input class="ani_box_w ani_in" type="number" name="" min="0" max="1000" value="300">
+                            </div>
+
+                        <!-- background -->
+                        <div class="slideAnimeSetChangesBG slideAnimeSetChangesOth" style="position:relative;left:10px;top:209px;transform:scaleX(0.96);">
+						    <div class="sectionAnimeChanges" style="floaT:left;WIDTH:160px;position: absolute;z-index:1;left:340px;top:-142px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">background</div>
+						    <hr style="display:inline-block;position:relative;top:-120px;z-index:0;margin-bottom:-52px;width:850px;left:10px" color="#0080ff">
+                        </div>
+                            <div class="slideAnimeSetChangesBGS slideAnimaSetChangesS" style="display:none;transform:scaleX(0.97);width:871px;position:relative;top:140px;left:20px">
+                                 <font style="margin-left:00px;margin-top:20px;">background <font style="margin-left:82px">:</font> <input value="#0080ff" style="width:548.5px;" type="color" class="ani_bgcolor ani_in"></font>
+                                <button style="top:5px;left:00px;height:38px;" class="trans_but ani_bg_color_trns">
+							            <img src="images\transparent.png" class="ani_transparent">
+					            </button>
+					            
+                            </div>
+                        <!-- text -->
+                        <div class="slideAnimeSetChangesText slideAnimeSetChangesOth" style="position:relative;left:10px;top:272px;transform:scaleX(0.96);">
+						    <div class="sectionAnimeChanges" style="floaT:left;WIDTH:100px;position: absolute;z-index:1;left:370px;top:-142px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">text</div>
+						    <hr style="display:inline-block;position:relative;top:-120px;z-index:0;margin-bottom:-52px;width:850px;left:10px" color="#0080ff">
+                        </div>
+                            <div class="slideAnimeSetChangesTextS slideAnimaSetChangesS" style="display:none;transform:scaleX(0.97);width:871px;position:relative;top:190px;display:none;left:20px">
+                                color <font style="margin-left:8px">:</font> <input style="top:5px;width:80px;" value="#ffffff" class="ani_txtcolor ani_in" type="color">
+						        <button style="top:10px;left:00px;" class="trans_but ani_txt_color_trns">
+							        <img src="images\transparent.png" class="transparent">
+						        </button>
+					        <font style="margin-left:22px;">letter - spacing</font> <font style="margin-left:8px">:</font> <input value="0" class="ani_in ani_let_sp" type="number">
+					        <font style="margin-left:22px;">text-align</font> <font style="margin-left:42px">:</font>
+						        <select class="ani_sel ani_txt_align" style="width:104px;margin-left:7px;" name="">
+							        <option>left</option>
+							        <option>right</option>
+							        <option selected>center</option>
+							        <option>justify</option>
+						        </select><Br>
+									<font>size <font style="margin-left:22.5px">:</font>
+									<input type="number" style="margin-left:8px;width:115px" min="0" class="ani_in ani_font_size"  value="28"></font>
+						        
+                                
+								<font style="margin-left:22px;">line - height</font> <font style="margin-left:42px">:</font> <input value="32" class="ani_in ani_line_hght" type="number">
+						        <font style="margin-left:22px;">background</font> <font style="margin-left:13px">:</font> <input style="margin-left: 7px;width:72px;top:5px;" value="#0080ff" class="ani_in  ani_txtbgcolor" type="color">
+                                <button style="top:10px;left:00px;" class="trans_but ani_txt_bg_color_trns">
+							        <img src="images\transparent.png" class="transparent">
+								</button><br>
+							        
+							        
+                                    
+							        <font>case <font style="margin-left:15.7px">:</font>
+							        <select class="ani_sel ani_txt_cs" style="width:112px;margin-left:7px;" name="">
+								        <option selected>none</option>
+								        <option>capitalize</option>
+								        <option>lowercase</option>
+								        <option>uppercase</option>
+									</select></font>
+									<font style="margin-left:22px;">word-spacing</font> <font style="margin-left:26px">:</font> <input value="0" class="ani_in ani_w_spacing" type="number">
+									<font style="margin-left:22px;">opacity <font style="margin-left:67px">:</font>
+										<input type="range" class="ani_top ani_in" min="0" max="1" step="0.01" value="1" style="width:85.7px;margin-left:7px;" name="" value="">
+										<div class="reset ani_rto"></div></font>
+										
+                                    <br />
+                                    top <font style="margin-left:26px">:</font>
+								        <input type="number" class="ani_optop ani_in" name="" value="0">
+							        <font style="margin-left:32px;">left <font style="margin-left:138px">:</font>
+										<input type="number" name="" class="ani_opleft ani_in" value="0"></font>
+										<font style="margin-left:24px;">weight <font style="margin-left:74.5px;">:</font>
+										<select class="ani_sel ani_f_weight" style="width:106px;margin-left:6px;" name="">
+											<option selected>normal</option>
+											<option>lighter</option>
+											<option>bold</option>
+											<option>bolder</option>
+										</select></font><br>
+								        <font style="margin-left:0px;">decoration</font> <font style="margin-left:23px">:</font>
+									        <select class="ani_sel ani_txt_dec_type ani_txt_dec " style="width:110px;margin-left:10.5px;" name="">
+										        <option>none</option>
+										        <option>underline</option>
+										        <option>overline</option>
+										        <option>line-through</option>
+                           			        </select>
+									        <input type="color" class="ani_in ani_sel ani_dec_clr ani_txt_dec" style="top:4px;width:104px;" name="" value="#ffffff">
+									        <select class="ani_sel ani_txt_dec_sty ani_txt_dec" style="width:117px;margin-left:10.5px;" name="">
+										        <option selected>solid</option>
+										        <option>double</option>
+										        <option>wavy</option>
+										        <option>dashed</option>
+										        <option>dotted</option>
+									        </select>
+							           
+								        <BR>
+
+									        <font style="margin-left:0px;margin-top:20px;">shadow <font style="margin-left:23px;">:</font>
+										        <input type="number" class="ani_in ani_tbs1 ani_txt_shadow_uni" style="width:81px;" name="" value="0">
+										        <input type="number" class="ani_in ani_tbs2 ani_txt_shadow_uni" style="width:81px;" name="" value="0">
+										        <input type="number" class="ani_in ani_tbs3 ani_txt_shadow_uni" style="width:81px " min="0"  name="" value="2">
+										        <input type="color" class="ani_in ani_tbxclr ani_txt_shadow_uni" style="position: relative;top:3px;height: 29px;width:105px;" name="" value="#ffffff">
+									        </font>
+                                
+								        
+                            </div>
+                        <!-- border -->
+                        <div class="slideAnimeSetChangesBor slideAnimeSetChangesOth" style="position:relative;left:10px;top:335px;transform:scaleX(0.96);">
+						    <div class="sectionAnimeChanges" style="floaT:left;WIDTH:130px;position: absolute;z-index:1;left:360px;top:-142px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">border</div>
+						    <hr style="display:inline-block;position:relative;top:-120px;z-index:0;margin-bottom:-52px;width:850px;left:10px" color="#0080ff">
+                        </div>
+                            <div class="slideAnimeSetChangesBorS slideAnimaSetChangesS" style="display:none;transform:scaleX(0.97);width:871px;position:relative;top:320px;transform:scaleX(0.92);left:10px;">
+								<div class="slidetbstyle slideoth" style="position:relative;left:10px;">
+									<div class="sectionbstyle" style="floaT:left;WIDTH:100px;position: absolute;z-index:1;left:350px;top:-62px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">style</div>
+									<hr style="display:inline-block;position:relative;top:-40px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+								</div>
+								<div style="display:none;position:relative;top:-12px;left:0px;height:150px;" class="slidebstyle slideb">
+									<span style="margin-left:00px;">top <Font style="margin-left:60px;"> : </font>
+										<select class="ani_tbor_style ani_in" style="width:113px;" name="">
+											<option>none</option>
+											<option>solid</option>
+											<option>groove</option>
+											<option selected>double</option>
+											<option>dotted</option>
+											<option>dashed</option>
+											<option>inset</option>
+										</select>
+									</span>
+									<span style="margin-left:302px;">left <Font style="margin-left:28px;"> : </font>
+										<select class="ani_lbor_style ani_in" style="width:113px;" name="">
+											<option>none</option>
+											<option>solid</option>
+											<option>groove</option>
+											<option selected>double</option>
+											<option>dotted</option>
+											<option>dashed</option>
+											<option>inset</option>
+										</select>
+									</span><BR>
+									<span style="margin-left:00px;">bottom <Font style="margin-left:14px;"> : </font>
+										<select class="ani_bbor_style ani_in" style="width:113px;" name="">
+											<option>none</option>
+											<option>solid</option>
+											<option>groove</option>
+											<option selected>double</option>
+											<option>dotted</option>
+											<option>dashed</option>
+											<option>inset</option>
+										</select>
+									</span>
+									<span style="margin-left:302px;">right <Font style="margin-left:12px;"> : </font>
+										<select class="ani_in ani_rbor_style" style="width:113px;" name="">
+											<option>none</option>
+											<option>solid</option>
+											<option>groove</option>
+											<option selected>double</option>
+											<option>dotted</option>
+											<option>dashed</option>
+											<option>inset</option>
+										</select>
+									</span><BR>
+									<select class="ani_in ani_wbor_style" style="width:113px;position:relative;top:-105px;lefT:335px;" name="">
+										<option>none</option>
+										<option>solid</option>
+										<option>groove</option>
+										<option selected>double</option>
+										<option>dotted</option>
+										<option>dashed</option>
+										<option>inset</option>
+									</select>
+								</div>
+			
+								<div class="slidetbcolor slideoth" style="margin-top:20px;top:128px;position:relative;left:10px;">
+									<div class="sectionbstyle" style="WIDTH:100px;position: absolute;z-index:1;left:350px;cursor:alias;display:inline-block;float:left;height:50px;top:-162px;text-align:center;background:white;">color</div>
+									<hr style="display:inline-block;position:relative;top:-140px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+								</div>
+								<div style="display:none;position:relative;top:30px;height:160px;" class="slidebcolor slideb">
+									<span style="margin-left:0px;">top <Font style="margin-left:60px;"> : </font>
+										<input type="color" class="ani_in ani_btcolor ani_bclr_uni" value="#ffffff" style="position:relative;top:3px;width:80px;" name="" value="#0080ff">
+										<button style="top:8px;left:00px;" class="trans_but ani_top_bor_clr_trns ani_bor_clr_trns_uni">
+											<img src="images\transparent.png" class="transparent">
+										</button>
+									</span>
+									<span style="margin-left:302px;">left <Font style="margin-left:28px;"> : </font>
+										<input type="color" class="ani_in ani_blcolor ani_bclr_uni" value="#ffffff" style="position:relative;top:3px;width:80px;" name="" value="#0080ff">
+										<button style="top:7px;left:00px;" class="trans_but ani_left_bor_clr_trns ani_bor_clr_trns_uni">
+											<img src="images\transparent.png" class="transparent">
+										</button>
+									</span><BR>
+									<span style="margin-left:0px;">bottom <Font style="margin-left:15px;"> : </font>
+										<input type="color" class="ani_in ani_bbcolor ani_bclr_uni" value="#ffffff" style="position:relative;top:3px;width:80px;" name="" value="#0080ff">
+										<button style="top:7px;left:-1px;" class="trans_but ani_bot_bor_clr_trns ani_bor_clr_trns_uni">
+											<img src="images\transparent.png" class="transparent">
+										</button>
+									</span>
+									<span style="margin-left:302px;">right <Font style="margin-left:12px;"> : </font>
+										<input type="color" class="ani_in ani_brcolor ani_bclr_uni" value="#ffffff" style="position:relative;top:3px;width:80px;" name="" value="#0080ff">
+										<button style="top:7px;left:-1px;" class="trans_but ani_right_bor_clr_trns ani_bor_clr_trns_uni">
+											<img src="images\transparent.png" class="transparent">
+										</button>
+									</span>
+									<input type="color" class="ani_in ani_wbcolor ani_bclr_uni" value="#ffffff" style="position:relative;width:80px;top:-30px;lefT:-422px;" name="" value="#0080ff">
+									<button style="top:-85px;left:437px;" class="trans_but ani_bor_clr_trns ani_bor_clr_trns_uni">
+											<img src="images\transparent.png" class="transparent">
+										</button>
+								</div>
+			
+								<div class="slidetbwidth slideoth" style="margin-top:20px;top:154px;position:relative;left:10px;">
+									<div class="sectionbstyle" style="WIDTH:100px;position: absolute;z-index:1;left:350px;cursor:alias;display:inline-block;float:left;top:-140px;text-align:center;background:white;height:30px;"><p style="position:relative;top:-50px;">width</p></div>
+									<hr style="display:inline-block;position:relative;top:-140px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+								</div>
+								<div style="display:none;position:relative;top:45px;height:160px;" class="slidebwidth slideb">
+									<span style="margin-left:0px;">top <Font style="margin-left:60px;"> : </font>
+										<input type="number" min="0" class="ani_in ani_btwidth" name="" value="10">
+									</span>
+									<span style="margin-left:302px;">left <Font style="margin-left:28px;"> : </font>
+										<input type="number" min="0" class="ani_in ani_blwidth" name="" value="10">
+									</span><BR>
+									<span style="margin-left:0px;">bottom <Font style="margin-left:15px;"> : </font>
+										<input type="number" min="0" class="ani_in ani_bbwidth" name="" value="10">
+									</span>
+									<span style="margin-left:302px;">right <Font style="margin-left:12px;"> : </font>
+										<input type="number" min="0" class="ani_in ani_brwidth" name="" value="10">
+									</span>
+									<input type="number" class="ani_in ani_wbwidth" min="0" style="position:relative;top:-34px;left:-412px;" name="" value="10">
+								</div>
+			
+								<div class="slidetbradius slideoth" style="margin-top:20px;top:178px;position:relative;left:10px;">
+									<div class="sectionbstyle" style="WIDTH:100px;position: absolute;z-index:1;left:350px;cursor:alias;display:inline-block;float:left;height:30px;top:-146px;text-align:center;background:white;"><p style="position:relative;top:-45px;">radius</p></div>
+									<hr style="display:inline-block;position:relative;top:-140px;z-index:0;margin-bottom:-52px;" color="#0080ff">
+								</div>
+								
+								<div style="display:none;position:relative;top:80px;height:80px;" class="slidebradius slideb">
+									<img src="images\th_dots.png" style="position: absolute;top:-5px;right:10px;float:right;margin-right: 10px;height:25px;width:5px;" class="ani_border_radius_abt"><br />
+									<span style="margin-left:0px;position:relative;top:-68px;">top - left <Font style="margin-left:60px;"> : </font>
+										<input type="range" class="ani_in ani_btlrad" min="0" step="0.5" max="150" style="width:100px;" name="" value="75">
+									</span>
+									<div class="round_shape ani_round_shape"></div>
+									<div class="half_round_shape ani_half_round_shape"></div>
+									<div class="square_shape ani_square_shape"></div>
+									<span style="margin-left:242px;position:relative;top:-68px;">top - right <Font style="margin-left:56px;"> : </font>
+										<input type="range" class="ani_in ani_btrrad" min="0" step="0.5" max="150" style="width:100px;" name="" value="75">
+									</span><BR>
+									<span style="margin-left:0px;position:relative;top:-68px;">bottom - left <Font style="margin-left:13px;"> : </font>
+										<input type="range" class="ani_in ani_bblrad" style="width:100px;" step="0.5" min="0" max="150" name="" value="75">
+									</span>
+									<span style="margin-left:242px;position:relative;top:-68px;">bottom - right <Font style="margin-left:12px;"> : </font>
+										<input type="range" class="ani_in ani_bbrrad" style="width:100px;" step="0.5" min="0" max="150" name="" value="75">
+									</span>
+									<div class="ani_sort_bor_rad" style="display:none;">
+										<label for="Radio1" style="font-size: 29px;margin-left:10px;">
+											<input type="radio" id="ani_Radio1" class="ani_set_type" style="margin-left: 0px;" name="ani_bor_Rad_type" value="px" checked>
+											<div class="ob"></div>
+											 pixels
+										</label><br /> 
+										<label for="Radio2" style="font-size: 29px;margin-left:10px;margin-top:-50px;">
+											<input type="radio" id="ani_Radio2" class="ani_set_type" style="margin-left: 0px;" name="ani_bor_Rad_type" value="%">
+											<div class="ob"></div>
+											 %
+										</label>
+									</div>
+								</div>
+                            </div>
+                        <!-- transform -->
+                        <div class="slideAnimeSetChangesTrns slideAnimeSetChangesOth" style="position:relative;left:10px;top:590px">
+						    <div class="sectionAnimeChanges" style="floaT:left;WIDTH:160px;position: absolute;z-index:1;left:340px;top:-142px;cursor:alias;display:inline-block;height:50px;text-align:center;background:white;">transform</div>
+						    <hr style="display:inline-block;position:relative;top:-120px;z-index:0;margin-bottom:-52px;width:810px;left:24px" color="#0080ff">
+                        </div>
+                            <div class="slideAnimeSetChangesTrnsS slideAnimaSetChangesS" style="transform:scaleX(0.97);width:871px;position:relative;top:520px;display:none;left:20px">
+                                 rotate - X <font style="margin-left:38.1px">:</font> <input class="ani_in ani_r_X" style="width:100px;" type="range" min="0" step="1" max="360" value="0">
+					<font style="margin-left:30px;">rotate - Y</font> <font style="margin-left:12px">:</font> <input class="ani_in ani_r_Y" style="width:100px;" type="range" min="0" step="1" max="360" value="0">
+					<font style="margin-left:20px;">rotate - Z</font> <font style="margin-left:12px">:</font> <input class="ani_in ani_r_Z" style="width:100px;" type="range" min="0" step="1" max="360" value="0"><Br>
+					scale - X<font style="margin-left:56.5px">:</font> <input  class="ani_in ani_scaleX" min="0" max="3" step="0.01" style="" type="number" name="" value="1">
+					<font style="margin-left:30px;">scale - Y</font> <font style="margin-left:22px">:</font> <input step="0.01" min="0" max="3" class="ani_in ani_scaleY" type="number" value="1">
+					<font style="margin-left:30px;">scale - Z</font> <font style="margin-left:21px">:</font> <input step="0.01" min="0" max="3" class="ani_in ani_scaleZ" type="number" value="1">
+					<BR>
+						skew - X<font style="margin-left:55.5px">:</font> <input  class="ani_in ani_skewX" style="" type="number" name="" value="0">
+						<font style="margin-left:30px;">skew - Y</font> <font style="margin-left:21px">:</font> <input class="ani_in ani_skewY" type="number" value="0"><br />
+                            </div>
+                    </div>
+				</div>
+				<div class="cust_work_place frames_workplace" style="display:none;">
+					<div class="frame_opts none" style="top:-70px;margin-lefT:0px;">
+						<p style="position:relative;top:5px;">none</p>
+					</div>
+					<div class="frame_opts frame1" style="top:7px;">
+						<img src="frames\frame1.png" class="frame_icons">
+					</div>
+					<div class="frame_opts frame2" style="top:7px;">
+						<img src="frames\frame2.png" class="frame_icons">
+					</div>
+					<div class="frame_opts frame3" style="top:7px;">
+						<img src="frames\frame3.png" class="frame_icons">
+					</div>
+					<div class="frame_opts frame4" style="top:7px;">
+						<img src="frames\frame4.png" class="frame_icons">
+					</div>
+                    
+                    <div class="frame_opts frame5" style="top:7px;margin-left:0px;">
+						<img src="frames\frame6.png" class="frame_icons">
+					</div>
+                    <div class="frame_opts frame6" style="top:7px;">
+						<img src="frames\frame7.png" class="frame_icons">
+					</div>
+				</div>
+				
+				<div class="cust_work_place sets_workplace" style="display:none;">
+					<div class="presets pre0" style="left:-14px;top:5px; ">
+                        <div class="preset1 preset"><p class="preset_text" style="top:-20px;left:18px;color:white;">blank</p></div>
+                    </div>
+                    <div class="presets pre1" style="left:-14px;top:5px; ">
+                        <div class="preset2 preset"><p class="preset_text" style="top:33px;color:white;left:25px;text-shadow:0px 0px 12px white;font-family:Calibri;letter-spacing:11px;">its a editor</p></div>
+                    </div>
+                    <div class="presets pre2" style="left:-14px;top:5px; ">
+                        <div class="preset3 preset"><p class="preset_text" style="color:white;line-height:72px;letter-spacing:5px;text-shadow:0px 0px 2px white">hey guys welcome to editor</p></div>
+                    </div>
+				</div>
+			</div>
+            <img src="images\max_output.png" class="max_out" style="transition:0.1s;transform:scale(0.14);position:fixed;top:494px;left:-46px;z-index:11;display:;"/>
+            <img src="images\min_OUT.png" class="min_out" style="transition:0.1s;transform:scale(0.02);position:fixed;top:-460px;left:-450px;z-index:11;display:none;"/>
+			<div class="output divs" style="overflow:hidden;position:absolute;top:510px;height:440px;transform-origin: top left;transform: scaleX(.98)">
+				<div class="per_cover" style="position:relative">
+					<div id="obj" class="obj" style="position:relative;z-index:1;display:inline-block;font-family:Hind;transition:0.4s;">
+						<p style="font-family:Krishna;"  class="add_text"></p>
+						<div class="trns_orgn_detector" style="display:none;position:absolute;height:20px;width:20px;background:rgba(0,128,255,.4);border:2px solid red;border-radius:50%;"></div>
+					</div>
+				</div>
+                <div class="parent_ani_obj" style="position:relative;display:inline-block;visibility:hidden;top:-240px;right:-10px;border:none;">
+                    <div class="ani_obj" style="position:relative;display:inline-block;z-index:1;top:0px;left:-40px;background:#0080ff;">
+                        <p style="font-family:Krishna;visibility: hidden;"  class="ani_add_text"></p>
+                    </div>
+                </div>
+			</div>
+		</div>
+				<!-- additional boxes -->
+                
+				<div class="em_selector more_divs_common_class more_divs" style="display:none;position: absolute;top:300px;left:100px;">
+					<img class="emojis em1" src="images\emojis\em1.png" alt="" style="margin-left:-12px;">
+					<img class="emojis em2" src="images\emojis\em2.png" alt="">
+					<img class="emojis em3" src="images\emojis\em3.png" alt="">
+					<img class="emojis em4" src="images\emojis\em4.png" alt="">
+					<img class="emojis em5" src="images\emojis\em5.png" alt="">
+					<img class="emojis em6" src="images\emojis\em6.png" alt="">
+					<img class="emojis em7" src="images\emojis\em7.png" alt="" style="margin-left:-40px;margin-right:0px;">
+					<img class="emojis em8" src="images\emojis\em8.png" alt="" style="margin-left:-14px;">
+					<img class="emojis em9" src="images\emojis\em9.png" alt="">
+					<img class="emojis em10" src="images\emojis\em10.png" alt="">
+					<img class="emojis em11" src="images\emojis\em11.png" alt="">
+					<img class="emojis em12" src="images\emojis\em12.png" alt="" style="margin-left:px;">
+					<img class="emojis em13" src="images\emojis\em13.png" alt="" style="margin-left:-33px">
+					<img class="emojis em14" src="images\emojis\em14.png" alt="" style="margin-left:-39px">
+					<img class="emojis em15" src="images\emojis\em15.png" alt="" style="margin-left:-14px">
+					<img class="emojis em16" src="images\emojis\em16.png" alt="" style="margin-left:-35px">
+					<img class="emojis em17" src="images\emojis\em17.png" alt="">
+					<img class="emojis em18" src="images\emojis\em18.png" alt="">
+					<img class="emojis em19" src="images\emojis\em19.png" alt="" style="margin-left:-35px">
+					<img class="emojis em20" src="images\emojis\em20.png" alt="" style="margin-left:-35px">
+					<img class="emojis em21" src="images\emojis\em21.png" alt="" style="margin-left:-38px">
+					<img class="emojis em22" src="images\emojis\em22.png" alt="" style="margin-left:-14px;">
+					<img class="emojis em23" src="images\emojis\em23.png" alt="" style="margin-left:-36px">
+					<img class="emojis em24" src="images\emojis\em24.png" alt="" style="margin-left:-35px">
+					<img class="emojis em25" src="images\emojis\em25.png" alt="">
+					<img class="emojis em26" src="images\emojis\em26.png" alt="">
+					<img class="emojis em27" src="images\emojis\em27.png" alt="">
+					<img class="emojis em28" src="images\emojis\em28.png" alt="" style="margin-left:-39px;">
+				</div>
+                <div class="dev_desk more_divs_common_class" style="display:none;position:absolute;z-index:20">
+                    <div class="title_dev_desk" style="background:#0080ff;font-family:Calibri;height:33px;text-align:center;color:rgb(245,245,245);font-size:25px;">
+                        <img src="images/title.png" style="transform:scale(0.3);position:relative;top:-25px;left:-24px;float:left;"/>
+                        <font style="cursor:alias;margin-left:-70px;margin-top:-10px;">Developer's desk</font>
+                    </div>
+                    <div id="obj_Code" class="obj_code" style="position:relative;top:10px;left:10px;">
+                           <font class="cls_code" style="margin-left:-90px;">.obj</font><font class="braket_code">{</font><br />
+                           <div style="position:relative;top:10px;left:30px;line-height:0px;">
+                               <p class="brght_pro_css pro_css" style="margin-top:25px;"><font class="pro_code"> filter : </font><font class="val_code">brightness(<font class="brght_val_code jq">1</font>);</font></p> <br />
+                               <p class="opa_pro_css pro_css"><font class="pro_code"> opacity : </font><font class="val_code"><font class="opa_val_code jq">1</font>;</font></p> <br />
+                               <p class="sha_pro_css pro_css"><font class="pro_code"> box-shadow : </font><font class="val_code"><font class="sh_type_val_code jq"></font> <font class="sh_n1_val_code jq">1</font>px <font class="sh_n2_val_code jq">1</font>px <font class="sh_n3_val_code jq">1</font>px <font class="sh_n4_val_code jq">1</font>px <font class="sh_clr_val_code jq">1</font>;</font> </p> <br />
+                               <p class="hght_pro_css pro_css"><font class="pro_code"> height : </font><font class="val_code"><font class="hght_val_code jq">300</font>px;</font></p> <br />
+                               <p class="wdth_pro_css pro_css"><font class="pro_code"> width : </font><font class="val_code"><font class="wdht_val_code jq">300</font>px;</font></p> <br />
+                               <p class="bg_pro_css pro_css"><font class="pro_code"> background : </font><font class="val_code"><font class="bg_val_code jq">300</font>;</font></p> <br />
+                           </div>
+                           <font class="braket_code">}</font><br />
+                    </div>
+                    
+                </div>
+                    
+        
+					<!--  message boxes -------------------->
+				<!-- editor [2D]------------------>
+				
+					<div class="msg_bx alt" style="display:block;position:absolute">
+						<header class="msg_header">alert</header>
+						<bdo class="msg_body"><p style="display:inline-block;" class="min_max"></p> <p style="display:inline-block;" class="unit"></p> limit reached</bdo>
+					</div>
+				
+				
+				
+			<!-- MORE DIVS -->
+                
+				<div class="font_selector_tool_editor more_divs_common_class more_divs" style="overflow-y:Scroll;display:none;">
+					<!-- hindi -->
+					<p class="font_header">hindi</p>
+					<label style="display: inline-block;margin-left:0px;" for="font_p_hindi_krishna">
+						<input type="radio" id="font_p_hindi_krishna" class="font_p" name="font_p" value="Krishna">
+						<div class="font_option_div" style="left:0px;margin-left:0px;"><font class="EditorLogoText" style="font-family:krishna">laiknd</font></div>
+					</label>
+					<label style="display: inline-block;" for="font_p_hindi_maya">
+						<input type="radio" id="font_p_hindi_maya" class="font_p" name="font_p" value="maya">
+						<div class="font_option_div" style="left:0px"><font class="EditorLogoText" style="font-family:maya">laiknd</font></div>
+					</label>
+					<BR>
+					<p class="font_header">russian</p>
+					<label style="display: inline-block;margin-left:0px;" for="font_p_russian_kremlin">
+						<input type="radio" id="font_p_russian_kremlin" class="font_p" name="font_p" value="kremlin">
+						<div class="font_option_div" style="left:0px;margin-left:0px;"><font class="EditorLogoText" style="font-family:kremlin;font-weight:lighter">laiknd</font></div>
+					</label>
+					<label style="display: inline-block;" for="font_p_russian_kalinka">
+						<input type="radio" id="font_p_russian_kalinka" class="font_p" name="font_p" value="kalinka">
+						<div class="font_option_div" style="left:0px"><font class="EditorLogoText" style="font-family:kalinka">laiknd</font></div>
+					</label>
+					<label style="display: inline-block;" for="font_p_russian_gagasm">
+						<input type="radio" id="font_p_russian_gagasm" class="font_p" name="font_p" value="gagasm">
+						<div class="font_option_div" style="left:0px"><font class="EditorLogoText" style="font-family:gagasm">laiknd</font></div>
+					</label>
+					<label style="display: inline-block;" for="font_p_russian_motherland">
+						<input type="radio" id="font_p_russian_motherland" class="font_p" name="font_p" value="motherland">
+						<div class="font_option_div" style="left:0px;"><font class="EditorLogoText" style="font-family:motherland;">laiknd</font></div>
+					</label>
+					<label style="display: inline-block;" for="font_p_russian_rusk">
+						<input type="radio" id="font_p_russian_rusk" class="font_p" name="font_p" value="rusk">
+						<div class="font_option_div" style="left:0px;margin-left:-40px;"><font class="EditorLogoText" style="font-family:rusk;">laiknd</font></div>
+					</label>
+					<BR>
+					
+					<p class="font_header">english</p>
+
+					<label style="display: inline-block;margin-left:0px;" for="font_p_english_Google">
+						<input type="radio" id="font_p_english_Google" class="font_p" name="font_p" value="Google">
+						<div class="font_option_div" style="left:0px;margin-left:0px;"><font class="EditorLogoText" style="font-family:Google;font-weight:lighter">editor</font></div>
+					</label>
+					<label style="display: inline-block;margin-left:5px;" for="font_p_english_aargh">
+						<input type="radio" id="font_p_english_aargh" class="font_p" name="font_p" value="aargh">
+						<div class="font_option_div" style="left:0px;margin-left:0px;"><font class="EditorLogoText" style="font-family:aargh;font-weight:lighter">editor</font></div>
+					</label>
+				</div>
+
+				<!-- Yatharth - our AI_ChatBot -->
+
+				<div class="Yatharth more_divs_common_class" style="display:none;height:600px;position:absolute;left:190px;top:70px;">
+					<div class="close_yatharth" style="position: absolute;right:20px;top:15px;transform:scale(.8)">
+						<div class="cross"></div>
+						<div class="cross" style="transform: rotate(-45deg)"></div>
+					</div>
+					<div class="Yatharth_logo">
+						<img style="height:40px;width:40px;transform:scaleX(.9);position:absolute;top:0px;left:0px;" src="images\Yatharth\Icon.png">
+					</div> 
+					<font class="Yatharth_tag_line">hey there its yatharth !</font>
+											<!-- conversation starts here -->
+					<div class="conversation_ground">
+							<div class="Yatharth_dialog_box">ask me anything about editor !</div>
+						
+						</div>
+					<input style="font-family:Calibri;text-decoration-color:#0080ff" class="User_Input_field"> 
+					<img class="speakToYatharth" src="images\speak.png" style="voice-family:female">
+					<img class="askToYatharth" src="images\send.png">
+				</div>
+  
+                <div class="anime_report more_divs_common_class" style="z-index:16;top:40px;display:none;position:absolute">
+                    <div style="" class="time_line">
+                        <font style="color:rgba(0,0,0,.4);font-size:20px;font-family:Calibri;position:relative;top:20px;left:10px;font-weight:bolder;">00:00</font>
+                        <div class="track_anime" style="display:inline-block;">
+                            <div class="track_loader">
+
+                            </div>
+                        </div>
+                        <font style="color:rgba(0,0,0,.4);font-size:20px;font-family:Calibri;position:relative;top:20px;left:-10px;font-weight:bolder;float:right;">
+                               <font class="DisplayMin">00</font>:<font class="DisplaySec">00</font></font><br />
+                        <div style="position:relative;left:140px;top:-13px;">
+                            <img class="control_animation pause_anime" style="left:0px;transform:scale(2.84);background:transparent;" src="images\pause.png" />
+                        <img class="control_animation play_anime" style="left:0px;margin-left:45px;transform:scale(2.54);background:transparent;" src="images\play.png" />
+                        <img class="control_animation stop_anime" style="left:0px;margin-left:90px;transform:scale(2.54);background:transparent;" src="images\stop.png" />
+
+                        </div>
+                    </div>
+
+                </div>
+				<div class="brightness more_divs more_divs_common_class" style="display:none;height:40px;width:246px;position:absolute;">
+					<label for="light" class="light_brght" style="position:relative;left:-50px;">
+						<input type="radio" id="light" class="brght_opt_sel lght_brght" style="margin-left: 0px;" name="brghts" value="light">
+						<div class="ob"></div>
+						 light
+					</label>
+                    <label for="dark" class="dark_brght" style="position:relative;left:-80px;">
+						<input type="radio" id="dark" class="brght_opt_sel dark_brght" style="margin-left: 0px;" name="brghts" value="dark" checked>
+						<div class="ob"></div>
+						 <font style="position:absolute;right:-60px">dark</font>
+					</label>
+				</div>
+				
+				<div class="states more_divs more_divs_common_class" style="font-family: monospace;line-height: 50px;left:54px;font-size: 26px;display:none;height:220px;width:170px;position:absolute">
+					<label class="nor" for="snormal" style="margin-left:3px;font-size: 26px;cursor:alias;">
+						<input type="radio" id="snormal" class="s_normal states_status" style="margin-left: -21px;" name="statesOfObject" value="normal" checked>
+						<div class="ob"></div>
+						 : normal
+					</label><Br>
+					<label class="hov" for="shover" style="margin-left:3px;font-size: 26px;cursor:alias;">
+						<input type="radio" id="shover" class="s_hover states_status" style="margin-left: -21px;" name="statesOfObject" value="hover">
+						<div class="ob"></div>
+						 : hover
+					</label><BR>
+					<label class="act" for="sactive" style="margin-left:3px;font-size: 26px;cursor:alias;">
+						<input type="radio" id="sactive" class="s_active states_status" style="margin-left: -21px;" name="statesOfObject" value="active">
+						<div class="ob"></div>
+						 : active
+					</label>
+					<footer class="more_footer">
+						<hr class="fhr">
+						<p style="width:166px;">
+							select a state of box. Use help menu for more
+						</p>
+					</footer>
+				</div>
+                <div class="helpboxes" >
+					<div class="help max_h msg_bx sc_z_h" style="transform:rotateX(45deg);display:none;">
+						<header class="msg_header" style="position:relative;top:-10px;">z - scaling</header>
+						<img src="images\max.png" class="expand">
+						<bdo class="msg_body" style="top:-10px;"><p class="helpbody pos_box_h_b">It clearly doesn't seem any change while you are scaling z the box but it helps to improve 3D view when rotating.</p></bdo>
+						<button type="button" class="gotit" name="GOTIT">GOT IT</button>
+					</div>
+					<div class="help max_h msg_bx pos_box_h" style="transform:rotateX(45deg);display:none;">
+						<header class="msg_header" style="position:relative;top:-10px;">box positioning</header>
+						<img src="images\max.png" class="expand">
+						<bdo class="msg_body" style="top:-10px;"><p class="helpbody pos_box_h_b">positioning of box in editor is too easy you just need to click and hold on box and move whether you want to drop it.</p></bdo>
+						<button type="button" class="gotit" name="GOTIT">GOT IT</button>
+					</div>
+					<div class="help max_h msg_bx pers_h" style="transform:rotateX(45deg);display:none;">
+						<header class="msg_header" style="position:relative;top:-10px;">perspective</header>
+						<img src="images\max.png" class="expand">
+						<bdo class="msg_body" style="top:-10px;"><p class="helpbody pers_h_b">when you look a building anywhere then it makes a 3D angle with itself which makes it real , as it is editor supports 3D perspection of box. perspective is a property defined in transform tab through which you can control the 3D view whenever you rotate the box. editor also allows
+							you to decide perspection origin. As default 3D view in editor is turned off for ease of normal purpose box designing. you can turn on through the settings.</p></bdo>
+						<button type="button" class="gotit" name="GOTIT">GOT IT</button>
+					</div>
+					<div class="help max_h msg_bx doub_txt_h" style="transform:rotateX(45deg);display:none;">
+						<header class="msg_header" style="position:relative;top:-10px;">double texting</header>
+						<img src="images\max.png" class="expand">
+						<bdo class="msg_body" style="top:-10px;"><p class="helpbody double_txt_h_b">double texting means write a letter once a time but box displays it twice. you need to fix some text formatting as follows :
+						<BR>
+						<font style="color:rgb(150,150,150);">step 1 :</font> open 'text' tab .<br>
+						<font style="color:rgb(150,150,150);">step 2 :</font> set more than zero value into second input box of shadow property.<BR>
+						<font style="color:rgb(150,150,150);">step 3 :</font> set '0' value in third input box.<BR>
+						<BR>note that shadow color is the color of copied text.</p></bdo>
+						<button type="button" class="gotit" name="GOTIT">GOT IT</button>
+					</div>
+					<div class="help max_h msg_bx exp_states_h" style="height:280px;display:none;">
+						<header class="msg_header" style="position:relative;top:-10px;">states</header>
+						<img src="images\max.png" class="expand">
+						<div class="msg_body">
+							<div class="helpbody exp_states_h_b" style="box-sizing: border-box;padding-top: 5px;padding-right: 14px;width:300px;overflow-y: scroll;height:180px;background: ;position: relative;top:-15px;">
+								there are three states of box in editor : normal, hover and active.
+								<ul class="bullets" style="" type="disk">
+									<li>normal state is when you aren't mouseover or clicking the box.</li>
+									<li>hover state is when you mouseover on the box. if you select hover option and make changes to box then it apply only when you're hovering
+									it.</li>
+									<li>active state is when you are clicking the box. if you choose active option and make changes to box then it apply only when you're clicking the box.</li>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="gotit" style="position:relative;top:0px;" name="GOTIT">GOT IT</button>
+					</div>
+				</div>
+				<div class="help_message_box more_divs more_divs_common_class" style="height:320px;padding:20px;width:390px;padding-top:10px;line-height:0px;left:105px;display:none;">
+					<p class="que sc_wr_q">how scale - z works ?</p><BR>
+					<p class="que pos_b_q">how to position box ?</p><BR>
+					<p class="que per_q">what is perspective ?</p><BR>
+					<p class="que dou_txt_q">what is double texting ?</p><BR>
+					<p class="que explain_sta_q">explain states ?</p><BR>
+					<p class="que inv_txt_q">how to invert a text ? </p>
+                    <p class="que bgcolor_q" style="display: none">How to save simple background color ? </p>
+					<footer class="more_footer">
+						<hr class="fhr" style="margin-left:;width:384px;">
+						<p style="width:386px;">
+							every topic that relates to editor is discussed in these questions. If you don't find your required question you may give feedback.
+						</p>
+					</footer>
+				</div>
+				<div class="settings_box more_divs more_divs_common_class" style="height:200px;padding:20px;width:180px;padding-top:10px;line-height:0px;left:145px;display:none;">
+                    <label for="alt_per" style="position:relative;top:-5px;">
+                        <input type="checkbox" id="alt_per" class="set_Class" checked/>
+                        <div class="track" style="display:inline-block;"><div class="ball"></div></div>
+                        <p style="position:relative;top:-70px;">alerts</p>
+                    </label>
+                    
+				</div>
+				<div class="save_project_box more_divs more_divs_common_class" style="height:300px;padding:0px;width:230px;padding-top:0px;line-height:0px;left:192px;display:none;">
+					<div class="save_div sdiv1" style="margin-top:0px;">
+						<p class="add" style="cursor:alias;position:relative;top:30px;left:16px;"> add</p>
+						<input style="display:none;" type="text" spellcheck="false" class="project_name" maxlength="8" name="" value="">
+						<img style="display:none;" src="images\apply_changes.png" class="apply_icon icon">
+						<img style="display:NONE;position:absolute;top:-70px;left:100px;" src="images\save.png" class="save_icon icon">
+					</div>
+                    <div class="save_div sdiv2" style="display:none;">
+						<p class="add" style="cursor:alias;position:relative;top:30px;left:16px;"> add</p>
+						<input style="display:none;" type="text" spellcheck="false" class="project_name" maxlength="8" name="" value="">
+						<img style="display:none;" src="images\apply_changes.png" class="apply_icon icon">
+						<img style="display:NONE;position:absolute;top:-70px;left:100px;" src="images\save.png" class="save_icon icon">
+					</div>
+                    <div class="save_div sdiv3" style="display:none;">
+						<p class="add" style="cursor:alias;position:relative;top:30px;left:16px;"> add</p>
+						<input style="display:none;" type="text" spellcheck="false" class="project_name" maxlength="8" name="" value="">
+						<img style="display:none;" src="images\apply_changes.png" class="apply_icon icon">
+						<img style="display:NONE;position:absolute;top:-70px;left:100px;" src="images\save.png" class="save_icon icon">
+					</div>
+                    <div class="save_div sdiv4" style="display:none;">
+						<p class="add" style="cursor:alias;position:relative;top:30px;left:16px;"> add</p>
+						<input style="display:none;" type="text" spellcheck="false" class="project_name" maxlength="8" name="" value="">
+						<img style="display:none;" src="images\apply_changes.png" class="apply_icon icon">
+						<img style="display:NONE;position:absolute;top:-70px;left:100px;" src="images\save.png" class="save_icon icon">
+					</div>
+                    <div class="save_div sdiv5" style="display:none;">
+						<p class="add" style="cursor:alias;position:relative;top:30px;left:16px;"> add</p>
+						<input style="display:none;" type="text" spellcheck="false" class="project_name" maxlength="8" name="" value="">
+						<img style="display:none;" src="images\apply_changes.png" class="apply_icon icon">
+						<img style="display:NONE;position:absolute;top:-70px;left:100px;" src="images\save.png" class="save_icon icon">
+					</div>
+				</div>
+        <!-- about editor -->
+                <div class="abt_editor" style="display:none;width:103%;position:absolute;transform-origin: top left;transform:scaleX(.98) scaleY(1.24)">
+                    <div class="close_abt">
+						<div class="cross"></div>
+						<div class="cross" style="transform:rotate(-45deg)"></div>
+					</div>
+                    <a href="J:\abhishek\html\Others\CSS\AbhishekSharma.html" target="_blank"><img src="images\contacts\ABHISHEK.jpeg" class="AbhishekSharma"/></a>
+                    <font class="SingleDeveloper">#SingleDeveloper</font>
+                    <p class="abt_hea_title" style="position:relative;left:-10px">editor v.1.1.0</p>
+                    <p class="abt_bdy">editor is an authorised web application , developed for 2D box design , 3D box design and for online image editing.
+                        it is also helpful for web designers to design a box or fix a image more efficiently.
+                    </p>
+                    <p class="abt_bdy">This web app is developed under prosecution of <a href="\abhishek\html\INDO\INDO.html" target="_blank">Indo Soft Corporation</a>. An unauthorised copyright on any version of editor will be punishable as per rules described in Information Technology Act 2000 (India) and WIPO.
+                        <br /><br />
+                        developed in india &#160; | &#160; <Font style="font-family:Krishna;">Hkkjr esa fodflr</Font><br /><br />
+                        &copy; 2018 ISC &#160; | &#160; All rights reserved
+                    </p>
+                    <p class="abt_hea_title" style="left:-0px;top:104px;">contacts</p>
+                        <center style="position:relative;left:-61px;top:150px;">
+                            <img src="images/contacts/UserId.png" class="contact_Geeky Snap"/>
+                            <img src="images/contacts/UserId.png" class="contact_Geeky Insta"/>
+                            <img src="images/contacts/UserId.png" class="contact_Geeky YT"/>
+                            <img src="images/contacts/UserId.png" class="contact_Geeky Gmail"/>
+                            <img src="images/contacts/UserId.png" class="contact_Geeky Tweet"/>
+                            <img src="images/contacts/UserId.png" class="contact_Geeky FaceB"/>
+                            <img src="images/contacts/UserId.png" class="contact_Geeky Hista"/>
+
+                            <a href="mailto:geekysharma31@gmail.com?Subject=Hello" target="_blank"><div class="hover_contacts GmailC">
+                                <img src="images/contacts/Gmail.png" style="left:515px;" class="hover_contacts_img"/>
+                                <div class="hover_contacts_bg" style="left:524px;"></div>
+                            </div></a>
+                            <a href="https://www.youtube.com/channel/UCasBgPQT304NL4Vosiz7jPQ?view_as=subscriber" target="_blank"><div class="hover_contacts YTC">
+                                <img src="images/contacts/YT.png" style="left:385px;transform:scale(0.5)" class="hover_contacts_img"/>
+                                <div class="hover_contacts_bg" style="left:395px;top:-163px;"></div>
+                            </div></a>
+                            <a href="https://twitter.com/geekysharma03" target="_blank"><div class="hover_contacts TweetC">
+                                <img src="images/contacts/twitter.png" style="filter:brightness(1.1);left:647px;" class="hover_contacts_img"/>
+                                <div class="hover_contacts_bg" style="left:555px;top:-165px;"></div>
+                            </div></a>
+                            <a href="https://www.instagram.com/geekysharma03/" target="_blank"><div class="hover_contacts InstaC">
+                                <img src="images/contacts/Insta.png" style="filter:brightness(1.1);transform:scale(0.5);left:268px;width:100px;height:100px;" class="hover_contacts_img"/>
+                                <div class="hover_contacts_bg" style="left:67px;top:-165px;"></div>
+                            </div></a>
+                            <a href="https://www.facebook.com/profile.php?id=100013737031165" target="_blank"><div class="hover_contacts FaceBC">
+                                <img src="images/contacts/fb.png" style="filter:brightness(1.1);left:784px;width:100px;height:100px;transform:scale(0.6);" class="hover_contacts_img"/>
+                                <div class="hover_contacts_bg" style="left:483px;top:-165px;"></div>
+                            </div></a>
+                            <div class="hover_contacts SnapC">
+                                <img src="images/contacts/Snapchat.png" style="filter:brightness(1);left:138px;width:100px;height:100px;transform:scale(0.6);" class="hover_contacts_img"/>
+                                <div class="hover_contacts_bg" style="left:-262px;top:-165px;"></div>
+                            </div>
+                            <div class="hover_contacts HistoC">
+                                <img src="images/contacts/Histo.jpg" style="filter:brightness(1);left:913px;width:100px;height:100px;transform:scale(0.5);" class="hover_contacts_img"/>
+                                <div class="hover_contacts_bg" style="left:410px;top:-165px;"></div>
+                            </div>
+                            
+						</center>
+					<p style="font-size: 20px;position: absolute;top:745px;left:400px;transform:scaleX(.7)" class="abt_hea_title">
+						enchanced by <b style="cursor:pointer">Geeky Sharma JS</b>
+					</p>
+				</div>
+				
+	</body>	
+</html>

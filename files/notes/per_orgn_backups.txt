@@ -1,0 +1,164 @@
+$(".per_origin").change(function () {
+        per_or = $(this).val();
+        obj.css("perspective-origin", per_or);
+        /*if ($(this).val() == "top") {
+            $(".perorgn1").val(50);
+            $(".perorgn2").val(0);
+        }
+        else if ($(this).val() == "left") {
+            $(".perorgn1").val(0);
+            $(".perorgn2").val(50);
+        }
+        else if ($(this).val() == "right") {
+            $(".perorgn1").val(100);
+            $(".perorgn2").val(50);
+        }
+        else if ($(this).val() == "bottom") {
+            $(".perorgn1").val(50);
+            $(".perorgn2").val(100);
+        }
+        else if ($(this).val() == "center") {
+            $(".perorgn1").val(50);
+            $(".perorgn2").val(50);
+        }
+        if ($(this).val() == "top - left") {
+            obj.css("transform-origin", "0% 0%");
+            $(".perorgn1").val(0);
+            $(".perorgn2").val(0);
+        }
+        else if ($(this).val() == "top - right") {
+            obj.css("transform-origin", "100% 0%");
+            $(".perorgn1").val(100);
+            $(".perorgn2").val(0);
+        }
+        else if ($(this).val() == "bottom - left") {
+            obj.css("transform-origin", "0% 100%");
+            $(".perorgn1").val(0);
+            $(".perorgn2").val(100);
+        }
+        else if ($(this).val() == "bottom - right") {
+            obj.css("transform-origin", "100% 100%");
+            $(".perorgn1").val(100);
+            $(".perorgn2").val(100);
+        }*/
+    });
+    /*$(".perorgn1").click(function () {
+        obj.css("perspective-origin", $(".perorgn1").val() + '%' + $(".perorgn2").val() + '%');
+        if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top - left");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top - right");
+        }
+        else if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom - left");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom - right");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("center");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("right");
+        }
+        else if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("left");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top");
+        }
+    });
+    $(".perorgn1").keyup(function () {
+        obj.css("perspective-origin", $(".perorgn1").val() + '%' + $(".perorgn2").val() + '%');
+        if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top - left");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top - right");
+        }
+        else if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom - left");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom - right");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("center");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("right");
+        }
+        else if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("left");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top");
+        }
+    });
+    $(".perorgn2").click(function () {
+        obj.css("perspective-origin", $(".perorgn1").val() + '%' + $(".perorgn2").val() + '%');
+        if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top - left");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top - right");
+        }
+        else if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom - left");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom - right");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("center");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("right");
+        }
+        else if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("left");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top");
+        }
+    });
+    $(".perorgn2").keyup(function () {
+        obj.css("perspective-origin", $(".perorgn1").val() + '%' + $(".perorgn2").val() + '%');
+        if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top - left");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top - right");
+        }
+        else if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom - left");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom - right");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("center");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "100") {
+            $(".per_origin").val("bottom");
+        }
+        else if ($(".perorgn1").val() == "100" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("right");
+        }
+        else if ($(".perorgn1").val() == "0" && $(".perorgn2").val() == "50") {
+            $(".per_origin").val("left");
+        }
+        else if ($(".perorgn1").val() == "50" && $(".perorgn2").val() == "0") {
+            $(".per_origin").val("top");
+        }
+    });*/

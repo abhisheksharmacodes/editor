@@ -1,0 +1,22 @@
+<!-- border - width <font style="margin-left:8px">:</font> <input value="12" class="bor_wid" type="number">
+					<font style="margin-left:70px;">border - style</font> <font style="margin-left:25px">:</font>
+							<select class="bor_style" style="width:273px;" name="">
+								<option>none</option>
+								<option>solid</option>
+								<option>groove</option>
+								<option selected>double</option>
+								<option>dotted</option>
+								<option>dashed</option>
+								<option>inset</option>
+							</select><BR>
+					border - color <font style="margin-left:15px">:</font> <input class="bor_clr" value="#ffffff" style="width:66px;" type="color">
+					<button style="top:5px;left:00px;" class="trans_but bor_color_trns">
+						<img src="\abhishek\html\Others\jQuery\Editor\images\transparent.png" class="transparent">
+					</button>
+					<font style="margin-left:67px;">border - radius</font> <font style="margin-left:10.5px">:</font>
+						<input value="60" style="width:50px;" class="bor_rad_1" type="number">
+						<input value="60" style="width:50px;" class="bor_rad_2" type="number">
+						<input value="60" style="width:50px;" class="bor_rad_3" type="number">
+						<input value="60" style="width:50px;" class="bor_rad_4" type="number">
+						<BR>
+					border - left <font style="margin-left:8px">:</font> <input value="12" class="bor_wid" type="number">-->

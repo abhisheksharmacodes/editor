@@ -1,0 +1,59 @@
+$(document).keyup(function (e) {
+        switch (e.which)
+        {
+            case 49:
+                $(".oth").removeClass('selected');
+                $('.gnrl').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".gnrl_workplace").fadeIn(300);
+                break;
+            case 50:
+                $(".oth").removeClass('selected');
+                $('.dimn').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".dimn_workplace").fadeIn(300);
+                break;
+            case 51:
+                $(".oth").removeClass('selected');
+                $('.bg').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".bg_workplace").fadeIn(300);
+                break;
+            case 52:
+                $(".oth").removeClass('selected');
+                $('.txt').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".txt_workplace").fadeIn(300);
+                break;
+            case 53:
+                $(".oth").removeClass('selected');
+                $('.border').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".bor_workplace").fadeIn(300);
+                break;
+            case 54:
+                $(".oth").removeClass('selected');
+                $('.trns').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".trns_workplace").fadeIn(300);
+                break;
+            case 55:
+                $(".oth").removeClass('selected');
+                $('.frms').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".frames_workplace").fadeIn(300);
+                break;
+            case 56:
+                $(".oth").removeClass('selected');
+                $('.scrl').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".scrl_workplace").fadeIn(300);
+                break;
+            case 57:
+                $(".oth").removeClass('selected');
+                $('.sets').addClass('selected');
+                $(".cust_work_place").fadeOut(0);
+                $(".sets_workplace").fadeIn(300);
+                break;
+        }
+    });

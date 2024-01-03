@@ -1,0 +1,42 @@
+ services to be developed ------------------>
+
+
+ . set default properties
+
+ . default variables initialization
+
+ . scroll customization
+
+ . transparent value 
+
+ . Yatharth Chatbot
+
+ . Themes
+
+ . screen Optimization
+
+ . to do tab...
+
+ . enable 3D view
+
+ . decoration problem
+
+ . JS compression
+
+ . search system
+
+ . Save Project Terminology
+
+ . developer tools deployment
+
+ . forex sign in form
+
+ . brightness
+
+ . Timer
+
+ . permanent save project
+
+ . frame [none state]
+
+ . Div - > Image

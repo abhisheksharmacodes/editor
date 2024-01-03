@@ -1,0 +1,60 @@
+<div class="cust_work_place scrl_workplace" style="display:none;">
+					scroll <font style="margin-left:79px;">:</font>
+					<label for="allow" style="font-size: 29px;margin-left:0px;">
+						<input type="radio" id="allow" class="set_type" style="margin-left: 0px;" name="scrl_c" value="scroll" checked>
+						<div class="ob"></div>
+						 allow
+					</label>
+					<label for="block" style="font-size: 29px;margin-left:0px;">
+						<input type="radio" id="block" class="set_type" style="margin-left: 0px;" name="scrl_c" value="hidden">
+						<div class="ob"></div>
+						 block
+					</label>
+					<br>
+					auto hide <font style="margin-left:30px;">:</font>
+					<label for="on" style="font-size: 29px;margin-left:0px;">
+						<input type="radio" id="on" class="set_type" style="margin-left: 0px;" name="autohidemode" value="allow" checked>
+						<div class="ob"></div>
+						 allow
+					</label>
+					<label for="off" style="font-size: 29px;margin-left:0px;">
+						<input type="radio" id="off" class="set_type" style="margin-left: 0px;" name="autohidemode" value="block">
+						<div class="ob"></div>
+						 block
+					</label>
+						<!-- section thumb -->
+						<hr color="#0080ff"> <div class="sectionscrl" style="">scrollbar track</div>
+						<section class="scrl_sec_1" style="margin-top:-60px;">
+							color <font style="margin-left:34px">:</font> <input class="scrl_tr_clr_uni" style="top:5px;" type="color" value="#ffffff">
+							<font style="margin-left:87px;position:relative;top:2px;">border  <font style="margin-left:112px">:</font></font>
+								<input type="number" style="width:83px;" name="scrl_tr_bor_w" value="0">
+								<select class="scrl_tr_bor_sty" style="width:80px;">
+                                    <option selected>none</option>
+							        <option>solid</option>
+							        <option>groove</option>
+							        <option>double</option>
+							        <option>dotted</option>
+							        <option>dashed</option>
+							        <option>inset</option>
+								</select>
+								<input type="color" style="width:80px;top:3px;" name="scrl_tr_bor_clr">
+								<BR>
+							width <font style="margin-left:26px;">:</font> <input type="number" class="scrl_tr_w" style="width:103px;" name="" value="3">
+							<font style="margin-left:87px;position:relative;top:2px;">opacity <font style="margin-left:107.6px">:</font></font>
+								<input type="range" style="width:275px;" min="0" max="1" step="0.01" name="sclr_opa" value="">
+									<div class="reset scrlop"></div>
+                            radius <font style="margin-left:22px">:</font> <input class="scrl_tr_clr" style="top:5px;" type="number" value="0">
+                            <font style="margin-left:89px;position:relative;top:2px;">shadow <font style="margin-left:103.6px">:</font></font>
+                                 <select class="scrl_tr_bx_type" style="width:50px;" name="">
+							        <option selected>outset</option>
+							        <option>inset</option>
+						        </select>
+						        <input type="number" class="scrl_tr_bs1" style="width:25px;" name="" value="0">
+						        <input type="number" class="scrl_tr_bs2" style="width:25px;" name="" value="0">
+						        <input type="number" class="scrl_tr_bs3" style="width:25px;" name="" value="26">
+						        <input type="number" class="scrl_tr_bs4" style="width:25px;" name="" value="0">
+						        <input type="color" class="scrl_tr_bxclr" style="position: relative;top:3px;height: 29px;width:25px;" name="" value="#0080ff">
+						</section>
+
+
+				</div>
